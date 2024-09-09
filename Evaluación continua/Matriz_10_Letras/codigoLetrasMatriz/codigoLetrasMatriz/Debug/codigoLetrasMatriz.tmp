@@ -1,0 +1,54 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\Debug\codigoLetrasMatriz.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>codigoLetrasMatriz.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>codigoLetrasMatriz.map</FILE>
+  <FILE>codigoLetrasMatriz.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <inicio><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>16</LINE></inicio>
+  <RSI_0><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>113</LINE></RSI_0>
+  <RSI_1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>122</LINE></RSI_1>
+  <main><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>49</LINE></main>
+  <else><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>56</LINE></else>
+  <letraM><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>141</LINE></letraM>
+  <else1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>60</LINE></else1>
+  <letraI1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>224</LINE></letraI1>
+  <else2><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>64</LINE></else2>
+  <letraC1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>384</LINE></letraC1>
+  <else3><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>68</LINE></else3>
+  <letraR><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>546</LINE></letraR>
+  <else4><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>72</LINE></else4>
+  <letraO><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>629</LINE></letraO>
+  <else5><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>76</LINE></else5>
+  <letraC2><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>463</LINE></letraC2>
+  <else6><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>80</LINE></else6>
+  <letraH><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>710</LINE></letraH>
+  <else7><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>84</LINE></else7>
+  <letraI2><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>305</LINE></letraI2>
+  <else8><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>88</LINE></else8>
+  <letraP><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>792</LINE></letraP>
+  <else9><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>92</LINE></else9>
+  <letraS><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>873</LINE></letraS>
+  <delay1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>101</LINE></delay1>
+  <L4><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>105</LINE></L4>
+  <delay><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>132</LINE></delay>
+  <L1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Ev continua\codigoLetrasMatriz\codigoLetrasMatriz\main.asm</FILE><LINE>134</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

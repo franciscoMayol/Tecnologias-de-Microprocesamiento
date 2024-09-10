@@ -1,0 +1,2 @@
+En el armado físico se implementaron dos NOT para cambiar la lógica negativa de la matriz
+para que funcione con lógica positiva, como se realizó el código.

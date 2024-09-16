@@ -1,0 +1,45 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\Debug\contador_0a99.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>contador_0a99.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>contador_0a99.map</FILE>
+  <FILE>contador_0a99.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <configuracion><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>18</LINE></configuracion>
+  <RSI_0><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>218</LINE></RSI_0>
+  <RSI_1><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>225</LINE></RSI_1>
+  <guardar_codigos_unidades><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>248</LINE></guardar_codigos_unidades>
+  <main_loop><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>66</LINE></main_loop>
+  <seguir><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>72</LINE></seguir>
+  <diez><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>168</LINE></diez>
+  <en_ap_a><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>173</LINE></en_ap_a>
+  <en_ap_a1><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>177</LINE></en_ap_a1>
+  <en_ap_a2><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>181</LINE></en_ap_a2>
+  <en_ap_a3><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>185</LINE></en_ap_a3>
+  <en_ap_a4><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>189</LINE></en_ap_a4>
+  <en_ap_a5><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>193</LINE></en_ap_a5>
+  <en_ap_a6><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>197</LINE></en_ap_a6>
+  <en_ap_a7><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>201</LINE></en_ap_a7>
+  <en_ap_a8><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>205</LINE></en_ap_a8>
+  <delay><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>234</LINE></delay>
+  <L1><FILE>C:\Users\Administrador\OneDrive\Carrera Mecatrónica\4rto Semestre\Microprocesamiento\Evaluación continua\Señales LUT\Codigos\contador_0a99\contador_0a99\main.asm</FILE><LINE>238</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

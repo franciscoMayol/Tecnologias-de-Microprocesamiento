@@ -1,0 +1,63 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\Debug\CodigoLavadora.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>CodigoLavadora.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>CodigoLavadora.map</FILE>
+  <FILE>CodigoLavadora.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <config><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>18</LINE></config>
+  <RSI_0><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>120</LINE></RSI_0>
+  <initUART><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>592</LINE></initUART>
+  <estado><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>78</LINE></estado>
+  <getc><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>608</LINE></getc>
+  <tipoCarga><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>102</LINE></tipoCarga>
+  <llamarLigera><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>141</LINE></llamarLigera>
+  <else><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>108</LINE></else>
+  <llamarMedia><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>131</LINE></llamarMedia>
+  <else1><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>112</LINE></else1>
+  <llamarPesada><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>136</LINE></llamarPesada>
+  <limpiar><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>126</LINE></limpiar>
+  <media><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>377</LINE></media>
+  <pesada><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>483</LINE></pesada>
+  <ligera><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>269</LINE></ligera>
+  <mensajeLavado><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>145</LINE></mensajeLavado>
+  <putc><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>599</LINE></putc>
+  <mensajeCentrifugado><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>181</LINE></mensajeCentrifugado>
+  <mensajeSecado><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>230</LINE></mensajeSecado>
+  <lavadoLigera><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>282</LINE></lavadoLigera>
+  <delay><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>617</LINE></delay>
+  <retardo_15seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>312</LINE></retardo_15seg>
+  <retardo_5seg_ligera><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>335</LINE></retardo_5seg_ligera>
+  <retardo_3seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>345</LINE></retardo_3seg>
+  <retardo_5seg1_ligera><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>356</LINE></retardo_5seg1_ligera>
+  <lavadoMedia><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>388</LINE></lavadoMedia>
+  <retardo_18seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>420</LINE></retardo_18seg>
+  <retardo_7seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>442</LINE></retardo_7seg>
+  <retardo_5seg_media><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>452</LINE></retardo_5seg_media>
+  <retardo_7seg1><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>463</LINE></retardo_7seg1>
+  <lavadoPesada><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>494</LINE></lavadoPesada>
+  <retardo_21seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>528</LINE></retardo_21seg>
+  <retardo_9seg><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>550</LINE></retardo_9seg>
+  <retardo_7seg_pesada><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>560</LINE></retardo_7seg_pesada>
+  <retardo_9seg1><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>571</LINE></retardo_9seg1>
+  <L1><FILE>C:\Users\Administrador\Desktop\Codigo_Lavadora\CodigoLavadora\CodigoLavadora\main.asm</FILE><LINE>621</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

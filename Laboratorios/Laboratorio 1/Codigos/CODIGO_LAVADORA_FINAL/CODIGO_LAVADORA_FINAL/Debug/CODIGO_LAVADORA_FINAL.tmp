@@ -1,0 +1,65 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\Debug\CODIGO_LAVADORA_FINAL.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>CODIGO_LAVADORA_FINAL.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>CODIGO_LAVADORA_FINAL.map</FILE>
+  <FILE>CODIGO_LAVADORA_FINAL.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <config><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>18</LINE></config>
+  <RSI_0><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>126</LINE></RSI_0>
+  <initUART><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>687</LINE></initUART>
+  <estado><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>78</LINE></estado>
+  <mensajeListo><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>274</LINE></mensajeListo>
+  <getc><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>703</LINE></getc>
+  <tipoCarga><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>108</LINE></tipoCarga>
+  <llamarLigera><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>147</LINE></llamarLigera>
+  <else><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>114</LINE></else>
+  <llamarMedia><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>137</LINE></llamarMedia>
+  <else1><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>118</LINE></else1>
+  <llamarPesada><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>142</LINE></llamarPesada>
+  <limpiar><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>132</LINE></limpiar>
+  <media><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>466</LINE></media>
+  <pesada><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>575</LINE></pesada>
+  <ligera><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>356</LINE></ligera>
+  <mensajeLavado><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>151</LINE></mensajeLavado>
+  <putc><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>694</LINE></putc>
+  <mensajeCentrifugado><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>187</LINE></mensajeCentrifugado>
+  <mensajeSecado><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>236</LINE></mensajeSecado>
+  <mensajeFin><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>308</LINE></mensajeFin>
+  <lavadoLigera><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>369</LINE></lavadoLigera>
+  <delay><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>712</LINE></delay>
+  <retardo_15seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>399</LINE></retardo_15seg>
+  <retardo_5seg_ligera><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>422</LINE></retardo_5seg_ligera>
+  <retardo_3seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>432</LINE></retardo_3seg>
+  <retardo_5seg1_ligera><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>443</LINE></retardo_5seg1_ligera>
+  <lavadoMedia><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>477</LINE></lavadoMedia>
+  <retardo_18seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>509</LINE></retardo_18seg>
+  <retardo_7seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>532</LINE></retardo_7seg>
+  <retardo_5seg_media><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>542</LINE></retardo_5seg_media>
+  <retardo_7seg1><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>553</LINE></retardo_7seg1>
+  <lavadoPesada><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>586</LINE></lavadoPesada>
+  <retardo_21seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>620</LINE></retardo_21seg>
+  <retardo_9seg><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>643</LINE></retardo_9seg>
+  <retardo_7seg_pesada><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>653</LINE></retardo_7seg_pesada>
+  <retardo_9seg1><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>664</LINE></retardo_9seg1>
+  <L1><FILE>c:\users\alito\Documents\Atmel Studio\7.0\CODIGO_LAVADORA_FINAL\CODIGO_LAVADORA_FINAL\main.asm</FILE><LINE>716</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

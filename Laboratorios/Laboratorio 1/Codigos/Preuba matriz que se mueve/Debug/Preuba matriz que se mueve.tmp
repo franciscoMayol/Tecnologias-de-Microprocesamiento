@@ -1,0 +1,41 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\Debug\Preuba matriz que se mueve.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Preuba matriz que se mueve.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Preuba matriz que se mueve.map</FILE>
+  <FILE>Preuba matriz que se mueve.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>38</LINE></main>
+  <f1><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>40</LINE></f1>
+  <delay_largo><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>396</LINE></delay_largo>
+  <f2><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>52</LINE></f2>
+  <delay_3ms><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>409</LINE></delay_3ms>
+  <f3><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>75</LINE></f3>
+  <f4><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>107</LINE></f4>
+  <f5><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>146</LINE></f5>
+  <f6><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>194</LINE></f6>
+  <f7><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>251</LINE></f7>
+  <f8><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>317</LINE></f8>
+  <delay><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>389</LINE></delay>
+  <L1><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>391</LINE></L1>
+  <L2><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>400</LINE></L2>
+  <L3><FILE>C:\Users\rodri\OneDrive\Escritorio\Primer Parcial\Preuba matriz que se mueve\main.asm</FILE><LINE>413</LINE></L3>
+ </LABELS>
+</ASSEMBLER_INFO>

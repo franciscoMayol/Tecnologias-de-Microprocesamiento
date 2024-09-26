@@ -1,0 +1,135 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.7.374\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\Debug\Codigo_Matriz_FINAL.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>Codigo_Matriz_FINAL.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>Codigo_Matriz_FINAL.map</FILE>
+  <FILE>Codigo_Matriz_FINAL.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <initUART><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>36</LINE></initUART>
+  <mensajemenu><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>143</LINE></mensajemenu>
+  <menu><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>64</LINE></menu>
+  <getc><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>133</LINE></getc>
+  <llamarmensaje><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>98</LINE></llamarmensaje>
+  <llamar_cara_feliz><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>103</LINE></llamar_cara_feliz>
+  <llamar_cara_triste><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>107</LINE></llamar_cara_triste>
+  <llamar_corazon><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>111</LINE></llamar_corazon>
+  <llamar_rombo><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>115</LINE></llamar_rombo>
+  <llamar_alien><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>119</LINE></llamar_alien>
+  <mensaje><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>719</LINE></mensaje>
+  <cara_feliz><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>360</LINE></cara_feliz>
+  <cara_triste><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>433</LINE></cara_triste>
+  <corazon><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>506</LINE></corazon>
+  <rombo><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>578</LINE></rombo>
+  <alien><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>649</LINE></alien>
+  <putc><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>124</LINE></putc>
+  <delay><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6982</LINE></delay>
+  <f1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>725</LINE></f1>
+  <delay_largo><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6957</LINE></delay_largo>
+  <f2><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>737</LINE></f2>
+  <delay_3ms><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6970</LINE></delay_3ms>
+  <f3><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>760</LINE></f3>
+  <f4><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>792</LINE></f4>
+  <f5><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>831</LINE></f5>
+  <f6><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>879</LINE></f6>
+  <f7><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>936</LINE></f7>
+  <f8><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1002</LINE></f8>
+  <f9><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1073</LINE></f9>
+  <f10><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1143</LINE></f10>
+  <f11><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1213</LINE></f11>
+  <f12><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1284</LINE></f12>
+  <f13><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1355</LINE></f13>
+  <f14><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1426</LINE></f14>
+  <f15><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1497</LINE></f15>
+  <f16><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1568</LINE></f16>
+  <f17><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1639</LINE></f17>
+  <f18><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1711</LINE></f18>
+  <f19><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1783</LINE></f19>
+  <f20><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1855</LINE></f20>
+  <f21><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1927</LINE></f21>
+  <f22><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>1999</LINE></f22>
+  <f23><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2071</LINE></f23>
+  <f24><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2142</LINE></f24>
+  <f25><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2215</LINE></f25>
+  <f26><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2285</LINE></f26>
+  <f27><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2355</LINE></f27>
+  <f28><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2425</LINE></f28>
+  <f29><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2495</LINE></f29>
+  <f30><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2566</LINE></f30>
+  <f31><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2636</LINE></f31>
+  <f32><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2706</LINE></f32>
+  <f33><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2777</LINE></f33>
+  <f34><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2848</LINE></f34>
+  <f35><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2919</LINE></f35>
+  <f36><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>2990</LINE></f36>
+  <f37><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3061</LINE></f37>
+  <f38><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3132</LINE></f38>
+  <f39><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3203</LINE></f39>
+  <f40><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3274</LINE></f40>
+  <f41><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3346</LINE></f41>
+  <f42><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3456</LINE></f42>
+  <f43><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3566</LINE></f43>
+  <f44><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3676</LINE></f44>
+  <f45><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3786</LINE></f45>
+  <f46><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>3896</LINE></f46>
+  <f47><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4017</LINE></f47>
+  <f48><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4127</LINE></f48>
+  <f49><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4247</LINE></f49>
+  <f50><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4317</LINE></f50>
+  <f51><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4387</LINE></f51>
+  <f52><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4457</LINE></f52>
+  <f53><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4529</LINE></f53>
+  <f54><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4600</LINE></f54>
+  <f55><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4671</LINE></f55>
+  <f56><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4741</LINE></f56>
+  <f57><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4813</LINE></f57>
+  <f58><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4884</LINE></f58>
+  <f59><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>4955</LINE></f59>
+  <f60><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5027</LINE></f60>
+  <f61><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5099</LINE></f61>
+  <f62><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5170</LINE></f62>
+  <f63><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5241</LINE></f63>
+  <f64><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5312</LINE></f64>
+  <f65><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5383</LINE></f65>
+  <f66><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5456</LINE></f66>
+  <f67><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5528</LINE></f67>
+  <f68><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5600</LINE></f68>
+  <f69><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5672</LINE></f69>
+  <f70><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5744</LINE></f70>
+  <f71><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5816</LINE></f71>
+  <f72><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5888</LINE></f72>
+  <f73><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>5960</LINE></f73>
+  <f74><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6031</LINE></f74>
+  <f75><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6102</LINE></f75>
+  <f76><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6173</LINE></f76>
+  <f77><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6244</LINE></f77>
+  <f78><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6315</LINE></f78>
+  <f79><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6386</LINE></f79>
+  <f80><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6457</LINE></f80>
+  <f81><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6528</LINE></f81>
+  <f82><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6599</LINE></f82>
+  <f83><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6670</LINE></f83>
+  <f84><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6741</LINE></f84>
+  <f85><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6812</LINE></f85>
+  <f86><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6883</LINE></f86>
+  <L2><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6961</LINE></L2>
+  <L3><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6974</LINE></L3>
+  <L1><FILE>C:\Users\MSI\OneDrive\Escritorio\UTEC\4to semestre\Micro\Laboratorios\Laboratorio 1\Códigos\Codigo_Matriz_FINAL\Codigo_Matriz_FINAL\main.asm</FILE><LINE>6984</LINE></L1>
+ </LABELS>
+</ASSEMBLER_INFO>

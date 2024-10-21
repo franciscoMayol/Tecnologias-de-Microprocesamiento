@@ -1,0 +1,12 @@
+temp ambiente 24° - 2.56, 2.55 V - (520 a 530)
+temp agua baja 14° - 2.16, 2.19 - (440 a 450)
+temp agua alta 83° - 4.1 V - (840 a 845)
+temp agua media alta 47° - 3.14 V - (640 - 646)
+temp agua media baja 36°- 2.82 V 
+
+punto 1 (2.175, 14)
+punto 2 (2.555, 24)
+punto 3 (4.1, 83)
+punto 4 (3.14, 47)
+punto 5 (2.82, 36)
+

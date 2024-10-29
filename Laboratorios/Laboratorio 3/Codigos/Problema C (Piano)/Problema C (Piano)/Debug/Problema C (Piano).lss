@@ -1,0 +1,1338 @@
+
+Problema C (Piano).elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  0000095e  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         00000080  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      0000002f  00000000  00000000  0000095e  2**0
+                  CONTENTS, READONLY
+  3 .stack.descriptors.hdr 0000000e  00000000  00000000  0000098d  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 000000a0  00000000  00000000  0000099b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000019cc  00000000  00000000  00000a3b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000762  00000000  00000000  00002407  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000812  00000000  00000000  00002b69  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000134  00000000  00000000  0000337c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000208  00000000  00000000  000034b0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    00000ed5  00000000  00000000  000036b8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000090  00000000  00000000  0000458d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .text         00000004  000008dc  000008dc  00000950  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00004620  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .text.pwm_init 0000001a  0000086e  0000086e  000008e2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.stop_pwm 0000000c  000008d0  000008d0  00000944  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.do_normal 00000028  0000072e  0000072e  000007a2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.re      00000028  00000756  00000756  000007ca  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.mi      00000028  0000077e  0000077e  000007f2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.fa      00000028  000007a6  000007a6  0000081a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.sol     00000028  000007ce  000007ce  00000842  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.la      00000028  000007f6  000007f6  0000086a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.si      00000028  0000081e  0000081e  00000892  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.starWarsTheme 000001e6  00000422  00000422  00000496  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.do_mayor 00000028  00000846  00000846  000008ba  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.jurassicPark 0000026a  000001b8  000001b8  0000022c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.UART_init 00000016  00000888  00000888  000008fc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.UART_sendChar 0000000e  000008b4  000008b4  00000928  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .text.UART_sendString 0000002c  00000702  00000702  00000776  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.UART_recibirCaracter 0000000e  000008c2  000008c2  00000936  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .progmemx.data 00000138  00000080  00000080  000000f4  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 31 .text.main    000000fa  00000608  00000608  0000067c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.__dummy_fini 00000002  000008e4  000008e4  00000958  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.__dummy_funcs_on_exit 00000002  000008e6  000008e6  0000095a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text.__dummy_simulator_exit 00000002  000008e8  000008e8  0000095c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.exit    00000016  0000089e  0000089e  00000912  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text._Exit   00000004  000008e0  000008e0  00000954  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+   8:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+   c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  10:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  14:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  18:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  1c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  20:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  24:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  28:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  2c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  30:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  34:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  38:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  3c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  40:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  44:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  48:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  4c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  50:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  54:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  58:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  5c:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  60:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+  64:	0c 94 6e 04 	jmp	0x8dc	; 0x8dc <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+  74:	0e 94 04 03 	call	0x608	; 0x608 <main>
+  78:	0c 94 4f 04 	jmp	0x89e	; 0x89e <exit>
+
+0000007c <_exit>:
+  7c:	f8 94       	cli
+
+0000007e <__stop_program>:
+  7e:	ff cf       	rjmp	.-2      	; 0x7e <__stop_program>
+
+Disassembly of section .text:
+
+000008dc <__bad_interrupt>:
+ 8dc:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.pwm_init:
+
+0000086e <pwm_init>:
+	_delay_ms(150);
+}
+
+// Inicializar PWM
+void pwm_init() {
+	TCCR1A = (1 << WGM11) | (1 << COM1A1);  // Modo Fast PWM, OC1A habilitado
+ 86e:	82 e8       	ldi	r24, 0x82	; 130
+ 870:	80 93 80 00 	sts	0x0080, r24	; 0x800080 <__TEXT_REGION_LENGTH__+0x7f8080>
+	TCCR1B = (1 << WGM12) | (1 << WGM13) | (1 << CS10);  // Sin prescaler, Fast PWM con ICR1 como TOP
+ 874:	89 e1       	ldi	r24, 0x19	; 25
+ 876:	80 93 81 00 	sts	0x0081, r24	; 0x800081 <__TEXT_REGION_LENGTH__+0x7f8081>
+	ICR1 = 0xFFFF;  // Valor inicial de ICR1
+ 87a:	8f ef       	ldi	r24, 0xFF	; 255
+ 87c:	9f ef       	ldi	r25, 0xFF	; 255
+ 87e:	90 93 87 00 	sts	0x0087, r25	; 0x800087 <__TEXT_REGION_LENGTH__+0x7f8087>
+ 882:	80 93 86 00 	sts	0x0086, r24	; 0x800086 <__TEXT_REGION_LENGTH__+0x7f8086>
+ 886:	08 95       	ret
+
+Disassembly of section .text.stop_pwm:
+
+000008d0 <stop_pwm>:
+}
+
+// Detener el PWM
+void stop_pwm() {
+	TCCR1A &= ~(1 << COM1A1); // Apagar la salida OC1A
+ 8d0:	e0 e8       	ldi	r30, 0x80	; 128
+ 8d2:	f0 e0       	ldi	r31, 0x00	; 0
+ 8d4:	80 81       	ld	r24, Z
+ 8d6:	8f 77       	andi	r24, 0x7F	; 127
+ 8d8:	80 83       	st	Z, r24
+ 8da:	08 95       	ret
+
+Disassembly of section .text.do_normal:
+
+0000072e <do_normal>:
+}
+
+// Funciones para generar las notas con reactivación del PWM y ciclo de trabajo 50%
+void do_normal() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 72e:	e0 e8       	ldi	r30, 0x80	; 128
+ 730:	f0 e0       	ldi	r31, 0x00	; 0
+ 732:	80 81       	ld	r24, Z
+ 734:	80 68       	ori	r24, 0x80	; 128
+ 736:	80 83       	st	Z, r24
+	ICR1 = 61136;  // ICR para frecuencia de 262 Hz (Do)
+ 738:	e6 e8       	ldi	r30, 0x86	; 134
+ 73a:	f0 e0       	ldi	r31, 0x00	; 0
+ 73c:	80 ed       	ldi	r24, 0xD0	; 208
+ 73e:	9e ee       	ldi	r25, 0xEE	; 238
+ 740:	91 83       	std	Z+1, r25	; 0x01
+ 742:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 744:	80 81       	ld	r24, Z
+ 746:	91 81       	ldd	r25, Z+1	; 0x01
+ 748:	96 95       	lsr	r25
+ 74a:	87 95       	ror	r24
+ 74c:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 750:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 754:	08 95       	ret
+
+Disassembly of section .text.re:
+
+00000756 <re>:
+}
+
+void re() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 756:	e0 e8       	ldi	r30, 0x80	; 128
+ 758:	f0 e0       	ldi	r31, 0x00	; 0
+ 75a:	80 81       	ld	r24, Z
+ 75c:	80 68       	ori	r24, 0x80	; 128
+ 75e:	80 83       	st	Z, r24
+	ICR1 = 54484;  // ICR para frecuencia de 294 Hz (Re)
+ 760:	e6 e8       	ldi	r30, 0x86	; 134
+ 762:	f0 e0       	ldi	r31, 0x00	; 0
+ 764:	84 ed       	ldi	r24, 0xD4	; 212
+ 766:	94 ed       	ldi	r25, 0xD4	; 212
+ 768:	91 83       	std	Z+1, r25	; 0x01
+ 76a:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 76c:	80 81       	ld	r24, Z
+ 76e:	91 81       	ldd	r25, Z+1	; 0x01
+ 770:	96 95       	lsr	r25
+ 772:	87 95       	ror	r24
+ 774:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 778:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 77c:	08 95       	ret
+
+Disassembly of section .text.mi:
+
+0000077e <mi>:
+}
+
+void mi() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 77e:	e0 e8       	ldi	r30, 0x80	; 128
+ 780:	f0 e0       	ldi	r31, 0x00	; 0
+ 782:	80 81       	ld	r24, Z
+ 784:	80 68       	ori	r24, 0x80	; 128
+ 786:	80 83       	st	Z, r24
+	ICR1 = 48484;  // ICR para frecuencia de 330 Hz (Mi)
+ 788:	e6 e8       	ldi	r30, 0x86	; 134
+ 78a:	f0 e0       	ldi	r31, 0x00	; 0
+ 78c:	84 e6       	ldi	r24, 0x64	; 100
+ 78e:	9d eb       	ldi	r25, 0xBD	; 189
+ 790:	91 83       	std	Z+1, r25	; 0x01
+ 792:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 794:	80 81       	ld	r24, Z
+ 796:	91 81       	ldd	r25, Z+1	; 0x01
+ 798:	96 95       	lsr	r25
+ 79a:	87 95       	ror	r24
+ 79c:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 7a0:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 7a4:	08 95       	ret
+
+Disassembly of section .text.fa:
+
+000007a6 <fa>:
+}
+
+void fa() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 7a6:	e0 e8       	ldi	r30, 0x80	; 128
+ 7a8:	f0 e0       	ldi	r31, 0x00	; 0
+ 7aa:	80 81       	ld	r24, Z
+ 7ac:	80 68       	ori	r24, 0x80	; 128
+ 7ae:	80 83       	st	Z, r24
+	ICR1 = 45872;  // ICR para frecuencia de 349 Hz (Fa)
+ 7b0:	e6 e8       	ldi	r30, 0x86	; 134
+ 7b2:	f0 e0       	ldi	r31, 0x00	; 0
+ 7b4:	80 e3       	ldi	r24, 0x30	; 48
+ 7b6:	93 eb       	ldi	r25, 0xB3	; 179
+ 7b8:	91 83       	std	Z+1, r25	; 0x01
+ 7ba:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 7bc:	80 81       	ld	r24, Z
+ 7be:	91 81       	ldd	r25, Z+1	; 0x01
+ 7c0:	96 95       	lsr	r25
+ 7c2:	87 95       	ror	r24
+ 7c4:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 7c8:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 7cc:	08 95       	ret
+
+Disassembly of section .text.sol:
+
+000007ce <sol>:
+}
+
+void sol() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 7ce:	e0 e8       	ldi	r30, 0x80	; 128
+ 7d0:	f0 e0       	ldi	r31, 0x00	; 0
+ 7d2:	80 81       	ld	r24, Z
+ 7d4:	80 68       	ori	r24, 0x80	; 128
+ 7d6:	80 83       	st	Z, r24
+	ICR1 = 40712;  // ICR para frecuencia de 392 Hz (Sol)
+ 7d8:	e6 e8       	ldi	r30, 0x86	; 134
+ 7da:	f0 e0       	ldi	r31, 0x00	; 0
+ 7dc:	88 e0       	ldi	r24, 0x08	; 8
+ 7de:	9f e9       	ldi	r25, 0x9F	; 159
+ 7e0:	91 83       	std	Z+1, r25	; 0x01
+ 7e2:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 7e4:	80 81       	ld	r24, Z
+ 7e6:	91 81       	ldd	r25, Z+1	; 0x01
+ 7e8:	96 95       	lsr	r25
+ 7ea:	87 95       	ror	r24
+ 7ec:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 7f0:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 7f4:	08 95       	ret
+
+Disassembly of section .text.la:
+
+000007f6 <la>:
+}
+
+void la() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 7f6:	e0 e8       	ldi	r30, 0x80	; 128
+ 7f8:	f0 e0       	ldi	r31, 0x00	; 0
+ 7fa:	80 81       	ld	r24, Z
+ 7fc:	80 68       	ori	r24, 0x80	; 128
+ 7fe:	80 83       	st	Z, r24
+	ICR1 = 36363;  // ICR para frecuencia de 440 Hz (La)
+ 800:	e6 e8       	ldi	r30, 0x86	; 134
+ 802:	f0 e0       	ldi	r31, 0x00	; 0
+ 804:	8b e0       	ldi	r24, 0x0B	; 11
+ 806:	9e e8       	ldi	r25, 0x8E	; 142
+ 808:	91 83       	std	Z+1, r25	; 0x01
+ 80a:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 80c:	80 81       	ld	r24, Z
+ 80e:	91 81       	ldd	r25, Z+1	; 0x01
+ 810:	96 95       	lsr	r25
+ 812:	87 95       	ror	r24
+ 814:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 818:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 81c:	08 95       	ret
+
+Disassembly of section .text.si:
+
+0000081e <si>:
+}
+
+void si() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 81e:	e0 e8       	ldi	r30, 0x80	; 128
+ 820:	f0 e0       	ldi	r31, 0x00	; 0
+ 822:	80 81       	ld	r24, Z
+ 824:	80 68       	ori	r24, 0x80	; 128
+ 826:	80 83       	st	Z, r24
+	ICR1 = 32406;  // ICR para frecuencia de 494 Hz (Si)
+ 828:	e6 e8       	ldi	r30, 0x86	; 134
+ 82a:	f0 e0       	ldi	r31, 0x00	; 0
+ 82c:	86 e9       	ldi	r24, 0x96	; 150
+ 82e:	9e e7       	ldi	r25, 0x7E	; 126
+ 830:	91 83       	std	Z+1, r25	; 0x01
+ 832:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 834:	80 81       	ld	r24, Z
+ 836:	91 81       	ldd	r25, Z+1	; 0x01
+ 838:	96 95       	lsr	r25
+ 83a:	87 95       	ror	r24
+ 83c:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 840:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 844:	08 95       	ret
+
+Disassembly of section .text.starWarsTheme:
+
+00000422 <starWarsTheme>:
+	}
+}
+
+void starWarsTheme() {
+	
+	sol();
+ 422:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 426:	2f ef       	ldi	r18, 0xFF	; 255
+ 428:	89 e6       	ldi	r24, 0x69	; 105
+ 42a:	98 e1       	ldi	r25, 0x18	; 24
+ 42c:	21 50       	subi	r18, 0x01	; 1
+ 42e:	80 40       	sbci	r24, 0x00	; 0
+ 430:	90 40       	sbci	r25, 0x00	; 0
+ 432:	e1 f7       	brne	.-8      	; 0x42c <starWarsTheme+0xa>
+ 434:	00 c0       	rjmp	.+0      	; 0x436 <starWarsTheme+0x14>
+ 436:	00 00       	nop
+	_delay_ms(500);
+	stop_pwm();
+ 438:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 43c:	2f ef       	ldi	r18, 0xFF	; 255
+ 43e:	81 ee       	ldi	r24, 0xE1	; 225
+ 440:	94 e0       	ldi	r25, 0x04	; 4
+ 442:	21 50       	subi	r18, 0x01	; 1
+ 444:	80 40       	sbci	r24, 0x00	; 0
+ 446:	90 40       	sbci	r25, 0x00	; 0
+ 448:	e1 f7       	brne	.-8      	; 0x442 <starWarsTheme+0x20>
+ 44a:	00 c0       	rjmp	.+0      	; 0x44c <starWarsTheme+0x2a>
+ 44c:	00 00       	nop
+	_delay_ms(100);
+
+	sol();
+ 44e:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 452:	2f ef       	ldi	r18, 0xFF	; 255
+ 454:	89 e6       	ldi	r24, 0x69	; 105
+ 456:	98 e1       	ldi	r25, 0x18	; 24
+ 458:	21 50       	subi	r18, 0x01	; 1
+ 45a:	80 40       	sbci	r24, 0x00	; 0
+ 45c:	90 40       	sbci	r25, 0x00	; 0
+ 45e:	e1 f7       	brne	.-8      	; 0x458 <starWarsTheme+0x36>
+ 460:	00 c0       	rjmp	.+0      	; 0x462 <starWarsTheme+0x40>
+ 462:	00 00       	nop
+	_delay_ms(500);
+	stop_pwm();
+ 464:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 468:	2f ef       	ldi	r18, 0xFF	; 255
+ 46a:	81 ee       	ldi	r24, 0xE1	; 225
+ 46c:	94 e0       	ldi	r25, 0x04	; 4
+ 46e:	21 50       	subi	r18, 0x01	; 1
+ 470:	80 40       	sbci	r24, 0x00	; 0
+ 472:	90 40       	sbci	r25, 0x00	; 0
+ 474:	e1 f7       	brne	.-8      	; 0x46e <starWarsTheme+0x4c>
+ 476:	00 c0       	rjmp	.+0      	; 0x478 <starWarsTheme+0x56>
+ 478:	00 00       	nop
+	_delay_ms(100);
+
+	sol();
+ 47a:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 47e:	2f ef       	ldi	r18, 0xFF	; 255
+ 480:	89 e6       	ldi	r24, 0x69	; 105
+ 482:	98 e1       	ldi	r25, 0x18	; 24
+ 484:	21 50       	subi	r18, 0x01	; 1
+ 486:	80 40       	sbci	r24, 0x00	; 0
+ 488:	90 40       	sbci	r25, 0x00	; 0
+ 48a:	e1 f7       	brne	.-8      	; 0x484 <starWarsTheme+0x62>
+ 48c:	00 c0       	rjmp	.+0      	; 0x48e <starWarsTheme+0x6c>
+ 48e:	00 00       	nop
+	_delay_ms(500);
+	stop_pwm();
+ 490:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 494:	2f ef       	ldi	r18, 0xFF	; 255
+ 496:	81 ee       	ldi	r24, 0xE1	; 225
+ 498:	94 e0       	ldi	r25, 0x04	; 4
+ 49a:	21 50       	subi	r18, 0x01	; 1
+ 49c:	80 40       	sbci	r24, 0x00	; 0
+ 49e:	90 40       	sbci	r25, 0x00	; 0
+ 4a0:	e1 f7       	brne	.-8      	; 0x49a <starWarsTheme+0x78>
+ 4a2:	00 c0       	rjmp	.+0      	; 0x4a4 <starWarsTheme+0x82>
+ 4a4:	00 00       	nop
+	_delay_ms(100);
+
+	mi();
+ 4a6:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 4aa:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ac:	86 e1       	ldi	r24, 0x16	; 22
+ 4ae:	91 e1       	ldi	r25, 0x11	; 17
+ 4b0:	21 50       	subi	r18, 0x01	; 1
+ 4b2:	80 40       	sbci	r24, 0x00	; 0
+ 4b4:	90 40       	sbci	r25, 0x00	; 0
+ 4b6:	e1 f7       	brne	.-8      	; 0x4b0 <starWarsTheme+0x8e>
+ 4b8:	00 c0       	rjmp	.+0      	; 0x4ba <starWarsTheme+0x98>
+ 4ba:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 4bc:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 4c0:	2f ef       	ldi	r18, 0xFF	; 255
+ 4c2:	81 ee       	ldi	r24, 0xE1	; 225
+ 4c4:	94 e0       	ldi	r25, 0x04	; 4
+ 4c6:	21 50       	subi	r18, 0x01	; 1
+ 4c8:	80 40       	sbci	r24, 0x00	; 0
+ 4ca:	90 40       	sbci	r25, 0x00	; 0
+ 4cc:	e1 f7       	brne	.-8      	; 0x4c6 <starWarsTheme+0xa4>
+ 4ce:	00 c0       	rjmp	.+0      	; 0x4d0 <starWarsTheme+0xae>
+ 4d0:	00 00       	nop
+	_delay_ms(100);
+
+	mi();
+ 4d2:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 4d6:	2f ef       	ldi	r18, 0xFF	; 255
+ 4d8:	81 ee       	ldi	r24, 0xE1	; 225
+ 4da:	94 e0       	ldi	r25, 0x04	; 4
+ 4dc:	21 50       	subi	r18, 0x01	; 1
+ 4de:	80 40       	sbci	r24, 0x00	; 0
+ 4e0:	90 40       	sbci	r25, 0x00	; 0
+ 4e2:	e1 f7       	brne	.-8      	; 0x4dc <starWarsTheme+0xba>
+ 4e4:	00 c0       	rjmp	.+0      	; 0x4e6 <starWarsTheme+0xc4>
+ 4e6:	00 00       	nop
+	_delay_ms(100);
+	stop_pwm();
+ 4e8:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 4ec:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ee:	81 ee       	ldi	r24, 0xE1	; 225
+ 4f0:	94 e0       	ldi	r25, 0x04	; 4
+ 4f2:	21 50       	subi	r18, 0x01	; 1
+ 4f4:	80 40       	sbci	r24, 0x00	; 0
+ 4f6:	90 40       	sbci	r25, 0x00	; 0
+ 4f8:	e1 f7       	brne	.-8      	; 0x4f2 <starWarsTheme+0xd0>
+ 4fa:	00 c0       	rjmp	.+0      	; 0x4fc <starWarsTheme+0xda>
+ 4fc:	00 00       	nop
+	_delay_ms(100);
+	
+	mi();
+ 4fe:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 502:	2f ef       	ldi	r18, 0xFF	; 255
+ 504:	81 ee       	ldi	r24, 0xE1	; 225
+ 506:	94 e0       	ldi	r25, 0x04	; 4
+ 508:	21 50       	subi	r18, 0x01	; 1
+ 50a:	80 40       	sbci	r24, 0x00	; 0
+ 50c:	90 40       	sbci	r25, 0x00	; 0
+ 50e:	e1 f7       	brne	.-8      	; 0x508 <starWarsTheme+0xe6>
+ 510:	00 c0       	rjmp	.+0      	; 0x512 <starWarsTheme+0xf0>
+ 512:	00 00       	nop
+	_delay_ms(100);
+	stop_pwm();
+ 514:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 518:	2f ef       	ldi	r18, 0xFF	; 255
+ 51a:	81 ee       	ldi	r24, 0xE1	; 225
+ 51c:	94 e0       	ldi	r25, 0x04	; 4
+ 51e:	21 50       	subi	r18, 0x01	; 1
+ 520:	80 40       	sbci	r24, 0x00	; 0
+ 522:	90 40       	sbci	r25, 0x00	; 0
+ 524:	e1 f7       	brne	.-8      	; 0x51e <starWarsTheme+0xfc>
+ 526:	00 c0       	rjmp	.+0      	; 0x528 <starWarsTheme+0x106>
+ 528:	00 00       	nop
+	_delay_ms(100);
+
+	si();  
+ 52a:	0e 94 0f 04 	call	0x81e	; 0x81e <si>
+ 52e:	2f ef       	ldi	r18, 0xFF	; 255
+ 530:	86 e1       	ldi	r24, 0x16	; 22
+ 532:	91 e1       	ldi	r25, 0x11	; 17
+ 534:	21 50       	subi	r18, 0x01	; 1
+ 536:	80 40       	sbci	r24, 0x00	; 0
+ 538:	90 40       	sbci	r25, 0x00	; 0
+ 53a:	e1 f7       	brne	.-8      	; 0x534 <starWarsTheme+0x112>
+ 53c:	00 c0       	rjmp	.+0      	; 0x53e <starWarsTheme+0x11c>
+ 53e:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 540:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 544:	2f ef       	ldi	r18, 0xFF	; 255
+ 546:	81 ee       	ldi	r24, 0xE1	; 225
+ 548:	94 e0       	ldi	r25, 0x04	; 4
+ 54a:	21 50       	subi	r18, 0x01	; 1
+ 54c:	80 40       	sbci	r24, 0x00	; 0
+ 54e:	90 40       	sbci	r25, 0x00	; 0
+ 550:	e1 f7       	brne	.-8      	; 0x54a <starWarsTheme+0x128>
+ 552:	00 c0       	rjmp	.+0      	; 0x554 <starWarsTheme+0x132>
+ 554:	00 00       	nop
+	_delay_ms(100);
+
+	sol();
+ 556:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 55a:	2f ef       	ldi	r18, 0xFF	; 255
+ 55c:	89 e6       	ldi	r24, 0x69	; 105
+ 55e:	98 e1       	ldi	r25, 0x18	; 24
+ 560:	21 50       	subi	r18, 0x01	; 1
+ 562:	80 40       	sbci	r24, 0x00	; 0
+ 564:	90 40       	sbci	r25, 0x00	; 0
+ 566:	e1 f7       	brne	.-8      	; 0x560 <starWarsTheme+0x13e>
+ 568:	00 c0       	rjmp	.+0      	; 0x56a <starWarsTheme+0x148>
+ 56a:	00 00       	nop
+	_delay_ms(500);
+	stop_pwm();
+ 56c:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 570:	2f ef       	ldi	r18, 0xFF	; 255
+ 572:	81 ee       	ldi	r24, 0xE1	; 225
+ 574:	94 e0       	ldi	r25, 0x04	; 4
+ 576:	21 50       	subi	r18, 0x01	; 1
+ 578:	80 40       	sbci	r24, 0x00	; 0
+ 57a:	90 40       	sbci	r25, 0x00	; 0
+ 57c:	e1 f7       	brne	.-8      	; 0x576 <starWarsTheme+0x154>
+ 57e:	00 c0       	rjmp	.+0      	; 0x580 <starWarsTheme+0x15e>
+ 580:	00 00       	nop
+	_delay_ms(100);
+
+	mi();
+ 582:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 586:	2f ef       	ldi	r18, 0xFF	; 255
+ 588:	86 e1       	ldi	r24, 0x16	; 22
+ 58a:	91 e1       	ldi	r25, 0x11	; 17
+ 58c:	21 50       	subi	r18, 0x01	; 1
+ 58e:	80 40       	sbci	r24, 0x00	; 0
+ 590:	90 40       	sbci	r25, 0x00	; 0
+ 592:	e1 f7       	brne	.-8      	; 0x58c <starWarsTheme+0x16a>
+ 594:	00 c0       	rjmp	.+0      	; 0x596 <starWarsTheme+0x174>
+ 596:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 598:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 59c:	2f ef       	ldi	r18, 0xFF	; 255
+ 59e:	81 ee       	ldi	r24, 0xE1	; 225
+ 5a0:	94 e0       	ldi	r25, 0x04	; 4
+ 5a2:	21 50       	subi	r18, 0x01	; 1
+ 5a4:	80 40       	sbci	r24, 0x00	; 0
+ 5a6:	90 40       	sbci	r25, 0x00	; 0
+ 5a8:	e1 f7       	brne	.-8      	; 0x5a2 <starWarsTheme+0x180>
+ 5aa:	00 c0       	rjmp	.+0      	; 0x5ac <starWarsTheme+0x18a>
+ 5ac:	00 00       	nop
+	_delay_ms(100);
+
+	si();
+ 5ae:	0e 94 0f 04 	call	0x81e	; 0x81e <si>
+ 5b2:	2f ef       	ldi	r18, 0xFF	; 255
+ 5b4:	86 e1       	ldi	r24, 0x16	; 22
+ 5b6:	91 e1       	ldi	r25, 0x11	; 17
+ 5b8:	21 50       	subi	r18, 0x01	; 1
+ 5ba:	80 40       	sbci	r24, 0x00	; 0
+ 5bc:	90 40       	sbci	r25, 0x00	; 0
+ 5be:	e1 f7       	brne	.-8      	; 0x5b8 <starWarsTheme+0x196>
+ 5c0:	00 c0       	rjmp	.+0      	; 0x5c2 <starWarsTheme+0x1a0>
+ 5c2:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 5c4:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 5c8:	2f ef       	ldi	r18, 0xFF	; 255
+ 5ca:	81 ee       	ldi	r24, 0xE1	; 225
+ 5cc:	94 e0       	ldi	r25, 0x04	; 4
+ 5ce:	21 50       	subi	r18, 0x01	; 1
+ 5d0:	80 40       	sbci	r24, 0x00	; 0
+ 5d2:	90 40       	sbci	r25, 0x00	; 0
+ 5d4:	e1 f7       	brne	.-8      	; 0x5ce <starWarsTheme+0x1ac>
+ 5d6:	00 c0       	rjmp	.+0      	; 0x5d8 <starWarsTheme+0x1b6>
+ 5d8:	00 00       	nop
+	_delay_ms(100);
+
+	sol();
+ 5da:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 5de:	2f ef       	ldi	r18, 0xFF	; 255
+ 5e0:	89 e6       	ldi	r24, 0x69	; 105
+ 5e2:	98 e1       	ldi	r25, 0x18	; 24
+ 5e4:	21 50       	subi	r18, 0x01	; 1
+ 5e6:	80 40       	sbci	r24, 0x00	; 0
+ 5e8:	90 40       	sbci	r25, 0x00	; 0
+ 5ea:	e1 f7       	brne	.-8      	; 0x5e4 <starWarsTheme+0x1c2>
+ 5ec:	00 c0       	rjmp	.+0      	; 0x5ee <starWarsTheme+0x1cc>
+ 5ee:	00 00       	nop
+	_delay_ms(500);
+	stop_pwm();
+ 5f0:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 5f4:	2f ef       	ldi	r18, 0xFF	; 255
+ 5f6:	83 ec       	ldi	r24, 0xC3	; 195
+ 5f8:	99 e0       	ldi	r25, 0x09	; 9
+ 5fa:	21 50       	subi	r18, 0x01	; 1
+ 5fc:	80 40       	sbci	r24, 0x00	; 0
+ 5fe:	90 40       	sbci	r25, 0x00	; 0
+ 600:	e1 f7       	brne	.-8      	; 0x5fa <starWarsTheme+0x1d8>
+ 602:	00 c0       	rjmp	.+0      	; 0x604 <starWarsTheme+0x1e2>
+ 604:	00 00       	nop
+ 606:	08 95       	ret
+
+Disassembly of section .text.do_mayor:
+
+00000846 <do_mayor>:
+	ICR1 = 32406;  // ICR para frecuencia de 494 Hz (Si)
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+}
+
+void do_mayor() {
+	TCCR1A |= (1 << COM1A1);  // Reactivar PWM
+ 846:	e0 e8       	ldi	r30, 0x80	; 128
+ 848:	f0 e0       	ldi	r31, 0x00	; 0
+ 84a:	80 81       	ld	r24, Z
+ 84c:	80 68       	ori	r24, 0x80	; 128
+ 84e:	80 83       	st	Z, r24
+	ICR1 = 30577;  // ICR para frecuencia de 523 Hz (Do alto)
+ 850:	e6 e8       	ldi	r30, 0x86	; 134
+ 852:	f0 e0       	ldi	r31, 0x00	; 0
+ 854:	81 e7       	ldi	r24, 0x71	; 113
+ 856:	97 e7       	ldi	r25, 0x77	; 119
+ 858:	91 83       	std	Z+1, r25	; 0x01
+ 85a:	80 83       	st	Z, r24
+	OCR1A = ICR1 / 2;  // Ciclo de trabajo al 50%
+ 85c:	80 81       	ld	r24, Z
+ 85e:	91 81       	ldd	r25, Z+1	; 0x01
+ 860:	96 95       	lsr	r25
+ 862:	87 95       	ror	r24
+ 864:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7f8089>
+ 868:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7f8088>
+ 86c:	08 95       	ret
+
+Disassembly of section .text.jurassicPark:
+
+000001b8 <jurassicPark>:
+	_delay_ms(200);
+}
+
+void jurassicPark() {
+	
+	mi();
+ 1b8:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 1bc:	2f ef       	ldi	r18, 0xFF	; 255
+ 1be:	87 e8       	ldi	r24, 0x87	; 135
+ 1c0:	93 e1       	ldi	r25, 0x13	; 19
+ 1c2:	21 50       	subi	r18, 0x01	; 1
+ 1c4:	80 40       	sbci	r24, 0x00	; 0
+ 1c6:	90 40       	sbci	r25, 0x00	; 0
+ 1c8:	e1 f7       	brne	.-8      	; 0x1c2 <jurassicPark+0xa>
+ 1ca:	00 c0       	rjmp	.+0      	; 0x1cc <jurassicPark+0x14>
+ 1cc:	00 00       	nop
+	_delay_ms(400);
+	stop_pwm();
+ 1ce:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 1d2:	2f ef       	ldi	r18, 0xFF	; 255
+ 1d4:	81 ee       	ldi	r24, 0xE1	; 225
+ 1d6:	94 e0       	ldi	r25, 0x04	; 4
+ 1d8:	21 50       	subi	r18, 0x01	; 1
+ 1da:	80 40       	sbci	r24, 0x00	; 0
+ 1dc:	90 40       	sbci	r25, 0x00	; 0
+ 1de:	e1 f7       	brne	.-8      	; 0x1d8 <jurassicPark+0x20>
+ 1e0:	00 c0       	rjmp	.+0      	; 0x1e2 <jurassicPark+0x2a>
+ 1e2:	00 00       	nop
+	_delay_ms(100);
+
+	si();
+ 1e4:	0e 94 0f 04 	call	0x81e	; 0x81e <si>
+ 1e8:	2f ef       	ldi	r18, 0xFF	; 255
+ 1ea:	86 e1       	ldi	r24, 0x16	; 22
+ 1ec:	91 e1       	ldi	r25, 0x11	; 17
+ 1ee:	21 50       	subi	r18, 0x01	; 1
+ 1f0:	80 40       	sbci	r24, 0x00	; 0
+ 1f2:	90 40       	sbci	r25, 0x00	; 0
+ 1f4:	e1 f7       	brne	.-8      	; 0x1ee <jurassicPark+0x36>
+ 1f6:	00 c0       	rjmp	.+0      	; 0x1f8 <jurassicPark+0x40>
+ 1f8:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 1fa:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 1fe:	2f ef       	ldi	r18, 0xFF	; 255
+ 200:	81 ee       	ldi	r24, 0xE1	; 225
+ 202:	94 e0       	ldi	r25, 0x04	; 4
+ 204:	21 50       	subi	r18, 0x01	; 1
+ 206:	80 40       	sbci	r24, 0x00	; 0
+ 208:	90 40       	sbci	r25, 0x00	; 0
+ 20a:	e1 f7       	brne	.-8      	; 0x204 <jurassicPark+0x4c>
+ 20c:	00 c0       	rjmp	.+0      	; 0x20e <jurassicPark+0x56>
+ 20e:	00 00       	nop
+	_delay_ms(100);
+
+	do_mayor();
+ 210:	0e 94 23 04 	call	0x846	; 0x846 <do_mayor>
+ 214:	2f ef       	ldi	r18, 0xFF	; 255
+ 216:	88 ef       	ldi	r24, 0xF8	; 248
+ 218:	95 e1       	ldi	r25, 0x15	; 21
+ 21a:	21 50       	subi	r18, 0x01	; 1
+ 21c:	80 40       	sbci	r24, 0x00	; 0
+ 21e:	90 40       	sbci	r25, 0x00	; 0
+ 220:	e1 f7       	brne	.-8      	; 0x21a <jurassicPark+0x62>
+ 222:	00 c0       	rjmp	.+0      	; 0x224 <jurassicPark+0x6c>
+ 224:	00 00       	nop
+	_delay_ms(450);
+	stop_pwm();
+ 226:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 22a:	2f ef       	ldi	r18, 0xFF	; 255
+ 22c:	81 ee       	ldi	r24, 0xE1	; 225
+ 22e:	94 e0       	ldi	r25, 0x04	; 4
+ 230:	21 50       	subi	r18, 0x01	; 1
+ 232:	80 40       	sbci	r24, 0x00	; 0
+ 234:	90 40       	sbci	r25, 0x00	; 0
+ 236:	e1 f7       	brne	.-8      	; 0x230 <jurassicPark+0x78>
+ 238:	00 c0       	rjmp	.+0      	; 0x23a <jurassicPark+0x82>
+ 23a:	00 00       	nop
+	_delay_ms(100);
+
+	la();
+ 23c:	0e 94 fb 03 	call	0x7f6	; 0x7f6 <la>
+ 240:	2f ef       	ldi	r18, 0xFF	; 255
+ 242:	86 e1       	ldi	r24, 0x16	; 22
+ 244:	91 e1       	ldi	r25, 0x11	; 17
+ 246:	21 50       	subi	r18, 0x01	; 1
+ 248:	80 40       	sbci	r24, 0x00	; 0
+ 24a:	90 40       	sbci	r25, 0x00	; 0
+ 24c:	e1 f7       	brne	.-8      	; 0x246 <jurassicPark+0x8e>
+ 24e:	00 c0       	rjmp	.+0      	; 0x250 <jurassicPark+0x98>
+ 250:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 252:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 256:	2f ef       	ldi	r18, 0xFF	; 255
+ 258:	81 ee       	ldi	r24, 0xE1	; 225
+ 25a:	94 e0       	ldi	r25, 0x04	; 4
+ 25c:	21 50       	subi	r18, 0x01	; 1
+ 25e:	80 40       	sbci	r24, 0x00	; 0
+ 260:	90 40       	sbci	r25, 0x00	; 0
+ 262:	e1 f7       	brne	.-8      	; 0x25c <jurassicPark+0xa4>
+ 264:	00 c0       	rjmp	.+0      	; 0x266 <jurassicPark+0xae>
+ 266:	00 00       	nop
+	_delay_ms(100);
+
+	re();
+ 268:	0e 94 ab 03 	call	0x756	; 0x756 <re>
+ 26c:	2f ef       	ldi	r18, 0xFF	; 255
+ 26e:	86 e1       	ldi	r24, 0x16	; 22
+ 270:	91 e1       	ldi	r25, 0x11	; 17
+ 272:	21 50       	subi	r18, 0x01	; 1
+ 274:	80 40       	sbci	r24, 0x00	; 0
+ 276:	90 40       	sbci	r25, 0x00	; 0
+ 278:	e1 f7       	brne	.-8      	; 0x272 <jurassicPark+0xba>
+ 27a:	00 c0       	rjmp	.+0      	; 0x27c <jurassicPark+0xc4>
+ 27c:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 27e:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 282:	2f ef       	ldi	r18, 0xFF	; 255
+ 284:	81 ee       	ldi	r24, 0xE1	; 225
+ 286:	94 e0       	ldi	r25, 0x04	; 4
+ 288:	21 50       	subi	r18, 0x01	; 1
+ 28a:	80 40       	sbci	r24, 0x00	; 0
+ 28c:	90 40       	sbci	r25, 0x00	; 0
+ 28e:	e1 f7       	brne	.-8      	; 0x288 <jurassicPark+0xd0>
+ 290:	00 c0       	rjmp	.+0      	; 0x292 <jurassicPark+0xda>
+ 292:	00 00       	nop
+	_delay_ms(100);
+
+	mi();
+ 294:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 298:	2f ef       	ldi	r18, 0xFF	; 255
+ 29a:	88 ef       	ldi	r24, 0xF8	; 248
+ 29c:	95 e1       	ldi	r25, 0x15	; 21
+ 29e:	21 50       	subi	r18, 0x01	; 1
+ 2a0:	80 40       	sbci	r24, 0x00	; 0
+ 2a2:	90 40       	sbci	r25, 0x00	; 0
+ 2a4:	e1 f7       	brne	.-8      	; 0x29e <jurassicPark+0xe6>
+ 2a6:	00 c0       	rjmp	.+0      	; 0x2a8 <jurassicPark+0xf0>
+ 2a8:	00 00       	nop
+	_delay_ms(450);
+	stop_pwm();
+ 2aa:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 2ae:	2f ef       	ldi	r18, 0xFF	; 255
+ 2b0:	82 e5       	ldi	r24, 0x52	; 82
+ 2b2:	97 e0       	ldi	r25, 0x07	; 7
+ 2b4:	21 50       	subi	r18, 0x01	; 1
+ 2b6:	80 40       	sbci	r24, 0x00	; 0
+ 2b8:	90 40       	sbci	r25, 0x00	; 0
+ 2ba:	e1 f7       	brne	.-8      	; 0x2b4 <jurassicPark+0xfc>
+ 2bc:	00 c0       	rjmp	.+0      	; 0x2be <jurassicPark+0x106>
+ 2be:	00 00       	nop
+	_delay_ms(150);
+
+	fa();
+ 2c0:	0e 94 d3 03 	call	0x7a6	; 0x7a6 <fa>
+ 2c4:	2f ef       	ldi	r18, 0xFF	; 255
+ 2c6:	8b e4       	ldi	r24, 0x4B	; 75
+ 2c8:	9d e1       	ldi	r25, 0x1D	; 29
+ 2ca:	21 50       	subi	r18, 0x01	; 1
+ 2cc:	80 40       	sbci	r24, 0x00	; 0
+ 2ce:	90 40       	sbci	r25, 0x00	; 0
+ 2d0:	e1 f7       	brne	.-8      	; 0x2ca <jurassicPark+0x112>
+ 2d2:	00 c0       	rjmp	.+0      	; 0x2d4 <jurassicPark+0x11c>
+ 2d4:	00 00       	nop
+	_delay_ms(600);
+	stop_pwm();
+ 2d6:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 2da:	2f ef       	ldi	r18, 0xFF	; 255
+ 2dc:	82 e5       	ldi	r24, 0x52	; 82
+ 2de:	97 e0       	ldi	r25, 0x07	; 7
+ 2e0:	21 50       	subi	r18, 0x01	; 1
+ 2e2:	80 40       	sbci	r24, 0x00	; 0
+ 2e4:	90 40       	sbci	r25, 0x00	; 0
+ 2e6:	e1 f7       	brne	.-8      	; 0x2e0 <jurassicPark+0x128>
+ 2e8:	00 c0       	rjmp	.+0      	; 0x2ea <jurassicPark+0x132>
+ 2ea:	00 00       	nop
+	_delay_ms(150);
+
+	mi();
+ 2ec:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 2f0:	2f ef       	ldi	r18, 0xFF	; 255
+ 2f2:	87 e8       	ldi	r24, 0x87	; 135
+ 2f4:	93 e1       	ldi	r25, 0x13	; 19
+ 2f6:	21 50       	subi	r18, 0x01	; 1
+ 2f8:	80 40       	sbci	r24, 0x00	; 0
+ 2fa:	90 40       	sbci	r25, 0x00	; 0
+ 2fc:	e1 f7       	brne	.-8      	; 0x2f6 <jurassicPark+0x13e>
+ 2fe:	00 c0       	rjmp	.+0      	; 0x300 <jurassicPark+0x148>
+ 300:	00 00       	nop
+	_delay_ms(400);
+	stop_pwm();
+ 302:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 306:	2f ef       	ldi	r18, 0xFF	; 255
+ 308:	81 ee       	ldi	r24, 0xE1	; 225
+ 30a:	94 e0       	ldi	r25, 0x04	; 4
+ 30c:	21 50       	subi	r18, 0x01	; 1
+ 30e:	80 40       	sbci	r24, 0x00	; 0
+ 310:	90 40       	sbci	r25, 0x00	; 0
+ 312:	e1 f7       	brne	.-8      	; 0x30c <jurassicPark+0x154>
+ 314:	00 c0       	rjmp	.+0      	; 0x316 <jurassicPark+0x15e>
+ 316:	00 00       	nop
+	_delay_ms(100);
+
+	si();
+ 318:	0e 94 0f 04 	call	0x81e	; 0x81e <si>
+ 31c:	2f ef       	ldi	r18, 0xFF	; 255
+ 31e:	86 e1       	ldi	r24, 0x16	; 22
+ 320:	91 e1       	ldi	r25, 0x11	; 17
+ 322:	21 50       	subi	r18, 0x01	; 1
+ 324:	80 40       	sbci	r24, 0x00	; 0
+ 326:	90 40       	sbci	r25, 0x00	; 0
+ 328:	e1 f7       	brne	.-8      	; 0x322 <jurassicPark+0x16a>
+ 32a:	00 c0       	rjmp	.+0      	; 0x32c <jurassicPark+0x174>
+ 32c:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 32e:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 332:	2f ef       	ldi	r18, 0xFF	; 255
+ 334:	81 ee       	ldi	r24, 0xE1	; 225
+ 336:	94 e0       	ldi	r25, 0x04	; 4
+ 338:	21 50       	subi	r18, 0x01	; 1
+ 33a:	80 40       	sbci	r24, 0x00	; 0
+ 33c:	90 40       	sbci	r25, 0x00	; 0
+ 33e:	e1 f7       	brne	.-8      	; 0x338 <jurassicPark+0x180>
+ 340:	00 c0       	rjmp	.+0      	; 0x342 <jurassicPark+0x18a>
+ 342:	00 00       	nop
+	_delay_ms(100);
+
+	do_mayor();
+ 344:	0e 94 23 04 	call	0x846	; 0x846 <do_mayor>
+ 348:	2f ef       	ldi	r18, 0xFF	; 255
+ 34a:	88 ef       	ldi	r24, 0xF8	; 248
+ 34c:	95 e1       	ldi	r25, 0x15	; 21
+ 34e:	21 50       	subi	r18, 0x01	; 1
+ 350:	80 40       	sbci	r24, 0x00	; 0
+ 352:	90 40       	sbci	r25, 0x00	; 0
+ 354:	e1 f7       	brne	.-8      	; 0x34e <jurassicPark+0x196>
+ 356:	00 c0       	rjmp	.+0      	; 0x358 <jurassicPark+0x1a0>
+ 358:	00 00       	nop
+	_delay_ms(450);
+	stop_pwm();
+ 35a:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 35e:	2f ef       	ldi	r18, 0xFF	; 255
+ 360:	81 ee       	ldi	r24, 0xE1	; 225
+ 362:	94 e0       	ldi	r25, 0x04	; 4
+ 364:	21 50       	subi	r18, 0x01	; 1
+ 366:	80 40       	sbci	r24, 0x00	; 0
+ 368:	90 40       	sbci	r25, 0x00	; 0
+ 36a:	e1 f7       	brne	.-8      	; 0x364 <jurassicPark+0x1ac>
+ 36c:	00 c0       	rjmp	.+0      	; 0x36e <jurassicPark+0x1b6>
+ 36e:	00 00       	nop
+	_delay_ms(100);
+
+	sol();
+ 370:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 374:	2f ef       	ldi	r18, 0xFF	; 255
+ 376:	87 e8       	ldi	r24, 0x87	; 135
+ 378:	93 e1       	ldi	r25, 0x13	; 19
+ 37a:	21 50       	subi	r18, 0x01	; 1
+ 37c:	80 40       	sbci	r24, 0x00	; 0
+ 37e:	90 40       	sbci	r25, 0x00	; 0
+ 380:	e1 f7       	brne	.-8      	; 0x37a <jurassicPark+0x1c2>
+ 382:	00 c0       	rjmp	.+0      	; 0x384 <jurassicPark+0x1cc>
+ 384:	00 00       	nop
+	_delay_ms(400);
+	stop_pwm();
+ 386:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 38a:	2f ef       	ldi	r18, 0xFF	; 255
+ 38c:	81 ee       	ldi	r24, 0xE1	; 225
+ 38e:	94 e0       	ldi	r25, 0x04	; 4
+ 390:	21 50       	subi	r18, 0x01	; 1
+ 392:	80 40       	sbci	r24, 0x00	; 0
+ 394:	90 40       	sbci	r25, 0x00	; 0
+ 396:	e1 f7       	brne	.-8      	; 0x390 <jurassicPark+0x1d8>
+ 398:	00 c0       	rjmp	.+0      	; 0x39a <jurassicPark+0x1e2>
+ 39a:	00 00       	nop
+	_delay_ms(100);
+
+	fa();
+ 39c:	0e 94 d3 03 	call	0x7a6	; 0x7a6 <fa>
+ 3a0:	2f ef       	ldi	r18, 0xFF	; 255
+ 3a2:	86 e1       	ldi	r24, 0x16	; 22
+ 3a4:	91 e1       	ldi	r25, 0x11	; 17
+ 3a6:	21 50       	subi	r18, 0x01	; 1
+ 3a8:	80 40       	sbci	r24, 0x00	; 0
+ 3aa:	90 40       	sbci	r25, 0x00	; 0
+ 3ac:	e1 f7       	brne	.-8      	; 0x3a6 <jurassicPark+0x1ee>
+ 3ae:	00 c0       	rjmp	.+0      	; 0x3b0 <jurassicPark+0x1f8>
+ 3b0:	00 00       	nop
+	_delay_ms(350);
+	stop_pwm();
+ 3b2:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 3b6:	2f ef       	ldi	r18, 0xFF	; 255
+ 3b8:	81 ee       	ldi	r24, 0xE1	; 225
+ 3ba:	94 e0       	ldi	r25, 0x04	; 4
+ 3bc:	21 50       	subi	r18, 0x01	; 1
+ 3be:	80 40       	sbci	r24, 0x00	; 0
+ 3c0:	90 40       	sbci	r25, 0x00	; 0
+ 3c2:	e1 f7       	brne	.-8      	; 0x3bc <jurassicPark+0x204>
+ 3c4:	00 c0       	rjmp	.+0      	; 0x3c6 <jurassicPark+0x20e>
+ 3c6:	00 00       	nop
+	_delay_ms(100);
+
+	mi();
+ 3c8:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 3cc:	2f ef       	ldi	r18, 0xFF	; 255
+ 3ce:	88 ef       	ldi	r24, 0xF8	; 248
+ 3d0:	95 e1       	ldi	r25, 0x15	; 21
+ 3d2:	21 50       	subi	r18, 0x01	; 1
+ 3d4:	80 40       	sbci	r24, 0x00	; 0
+ 3d6:	90 40       	sbci	r25, 0x00	; 0
+ 3d8:	e1 f7       	brne	.-8      	; 0x3d2 <jurassicPark+0x21a>
+ 3da:	00 c0       	rjmp	.+0      	; 0x3dc <jurassicPark+0x224>
+ 3dc:	00 00       	nop
+	_delay_ms(450);
+	stop_pwm();
+ 3de:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 3e2:	2f ef       	ldi	r18, 0xFF	; 255
+ 3e4:	82 e5       	ldi	r24, 0x52	; 82
+ 3e6:	97 e0       	ldi	r25, 0x07	; 7
+ 3e8:	21 50       	subi	r18, 0x01	; 1
+ 3ea:	80 40       	sbci	r24, 0x00	; 0
+ 3ec:	90 40       	sbci	r25, 0x00	; 0
+ 3ee:	e1 f7       	brne	.-8      	; 0x3e8 <jurassicPark+0x230>
+ 3f0:	00 c0       	rjmp	.+0      	; 0x3f2 <jurassicPark+0x23a>
+ 3f2:	00 00       	nop
+	_delay_ms(150);
+
+	re();
+ 3f4:	0e 94 ab 03 	call	0x756	; 0x756 <re>
+ 3f8:	2f ef       	ldi	r18, 0xFF	; 255
+ 3fa:	8b e4       	ldi	r24, 0x4B	; 75
+ 3fc:	9d e1       	ldi	r25, 0x1D	; 29
+ 3fe:	21 50       	subi	r18, 0x01	; 1
+ 400:	80 40       	sbci	r24, 0x00	; 0
+ 402:	90 40       	sbci	r25, 0x00	; 0
+ 404:	e1 f7       	brne	.-8      	; 0x3fe <jurassicPark+0x246>
+ 406:	00 c0       	rjmp	.+0      	; 0x408 <__EEPROM_REGION_LENGTH__+0x8>
+ 408:	00 00       	nop
+	_delay_ms(600);
+	stop_pwm();
+ 40a:	0e 94 68 04 	call	0x8d0	; 0x8d0 <stop_pwm>
+ 40e:	2f ef       	ldi	r18, 0xFF	; 255
+ 410:	82 e5       	ldi	r24, 0x52	; 82
+ 412:	97 e0       	ldi	r25, 0x07	; 7
+ 414:	21 50       	subi	r18, 0x01	; 1
+ 416:	80 40       	sbci	r24, 0x00	; 0
+ 418:	90 40       	sbci	r25, 0x00	; 0
+ 41a:	e1 f7       	brne	.-8      	; 0x414 <__EEPROM_REGION_LENGTH__+0x14>
+ 41c:	00 c0       	rjmp	.+0      	; 0x41e <__EEPROM_REGION_LENGTH__+0x1e>
+ 41e:	00 00       	nop
+ 420:	08 95       	ret
+
+Disassembly of section .text.UART_init:
+
+00000888 <UART_init>:
+
+
+
+// Inicializar UART
+void UART_init(unsigned int ubrr) {
+	UBRR0H = (unsigned char)(ubrr >> 8);
+ 888:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7f80c5>
+	UBRR0L = (unsigned char)ubrr;
+ 88c:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7f80c4>
+	UCSR0B = (1 << RXEN0) | (1 << TXEN0);  // Habilitar recepción y transmisión
+ 890:	88 e1       	ldi	r24, 0x18	; 24
+ 892:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7f80c1>
+	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00);  // Configurar 8 bits de datos
+ 896:	86 e0       	ldi	r24, 0x06	; 6
+ 898:	80 93 c2 00 	sts	0x00C2, r24	; 0x8000c2 <__TEXT_REGION_LENGTH__+0x7f80c2>
+ 89c:	08 95       	ret
+
+Disassembly of section .text.UART_sendChar:
+
+000008b4 <UART_sendChar>:
+}
+
+// Enviar un carácter por UART
+void UART_sendChar(char data) {
+	while (!(UCSR0A & (1 << UDRE0)));  // Esperar a que el registro esté listo
+ 8b4:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 8b8:	95 ff       	sbrs	r25, 5
+ 8ba:	fc cf       	rjmp	.-8      	; 0x8b4 <UART_sendChar>
+	UDR0 = data;  // Enviar el dato
+ 8bc:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ 8c0:	08 95       	ret
+
+Disassembly of section .text.UART_sendString:
+
+00000702 <UART_sendString>:
+}
+
+// Enviar una cadena de caracteres por UART
+void UART_sendString(const char *str) {
+ 702:	cf 92       	push	r12
+ 704:	df 92       	push	r13
+ 706:	ef 92       	push	r14
+ 708:	6b 01       	movw	r12, r22
+ 70a:	e8 2e       	mov	r14, r24
+	while (*str) {
+ 70c:	06 c0       	rjmp	.+12     	; 0x71a <UART_sendString+0x18>
+		UART_sendChar(*str++);
+ 70e:	9f ef       	ldi	r25, 0xFF	; 255
+ 710:	c9 1a       	sub	r12, r25
+ 712:	d9 0a       	sbc	r13, r25
+ 714:	e9 0a       	sbc	r14, r25
+ 716:	0e 94 5a 04 	call	0x8b4	; 0x8b4 <UART_sendChar>
+	UDR0 = data;  // Enviar el dato
+}
+
+// Enviar una cadena de caracteres por UART
+void UART_sendString(const char *str) {
+	while (*str) {
+ 71a:	f6 01       	movw	r30, r12
+ 71c:	84 91       	lpm	r24, Z
+ 71e:	e7 fc       	sbrc	r14, 7
+ 720:	80 81       	ld	r24, Z
+ 722:	81 11       	cpse	r24, r1
+ 724:	f4 cf       	rjmp	.-24     	; 0x70e <UART_sendString+0xc>
+		UART_sendChar(*str++);
+	}
+}
+ 726:	ef 90       	pop	r14
+ 728:	df 90       	pop	r13
+ 72a:	cf 90       	pop	r12
+ 72c:	08 95       	ret
+
+Disassembly of section .text.UART_recibirCaracter:
+
+000008c2 <UART_recibirCaracter>:
+
+char UART_recibirCaracter(void) {
+	while (!(UCSR0A & (1 << RXC0)));  // Esperar hasta que haya un dato disponible en el buffer de recepción
+ 8c2:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 8c6:	88 23       	and	r24, r24
+ 8c8:	e4 f7       	brge	.-8      	; 0x8c2 <UART_recibirCaracter>
+	return UDR0;  // Devolver el carácter recibido
+ 8ca:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ 8ce:	08 95       	ret
+
+Disassembly of section .text.main:
+
+00000608 <main>:
+void starWarsTheme();
+void jurassicPark();
+
+int main(void){
+
+	UART_init(103); // Configurar baud rate
+ 608:	87 e6       	ldi	r24, 0x67	; 103
+ 60a:	90 e0       	ldi	r25, 0x00	; 0
+ 60c:	0e 94 44 04 	call	0x888	; 0x888 <UART_init>
+	pwm_init(); // Configurar PWM
+ 610:	0e 94 37 04 	call	0x86e	; 0x86e <pwm_init>
+
+	DDRD &= ~((1 << DO) | (1 << RE) | (1 << MI) | (1 << FA) | (1 << SOL) | (1 << LA)); // Declaro pines para teclas
+ 614:	8a b1       	in	r24, 0x0a	; 10
+ 616:	83 70       	andi	r24, 0x03	; 3
+ 618:	8a b9       	out	0x0a, r24	; 10
+	DDRB &= ~((1 << SI)| (1 << DO_M));
+ 61a:	84 b1       	in	r24, 0x04	; 4
+ 61c:	8a 7f       	andi	r24, 0xFA	; 250
+ 61e:	84 b9       	out	0x04, r24	; 4
+	DDRB |= (1 << PWM);  // PB1 como salida para el PWM (buzzer)
+ 620:	84 b1       	in	r24, 0x04	; 4
+ 622:	82 60       	ori	r24, 0x02	; 2
+ 624:	84 b9       	out	0x04, r24	; 4
+	
+	
+	PORTD |= ((1 << DO) | (1 << RE) | (1 << MI) | (1 << FA) | (1 << SOL) | (1 << LA));
+ 626:	8b b1       	in	r24, 0x0b	; 11
+ 628:	8c 6f       	ori	r24, 0xFC	; 252
+ 62a:	8b b9       	out	0x0b, r24	; 11
+	PORTB |= ((1 << SI) | (1 << DO_M));
+ 62c:	85 b1       	in	r24, 0x05	; 5
+ 62e:	85 60       	ori	r24, 0x05	; 5
+ 630:	85 b9       	out	0x05, r24	; 5
+	while (1) {
+
+		//------------------------------------------------ PREGUNTA A USUARIO
+		unsigned char respuesta = 0;
+
+		UART_sendString("-----Bienvenido al Piano Magico-----\n");
+ 632:	60 e8       	ldi	r22, 0x80	; 128
+ 634:	70 e0       	ldi	r23, 0x00	; 0
+ 636:	80 e0       	ldi	r24, 0x00	; 0
+ 638:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+		UART_sendString("Canciones para escoger:\n");
+ 63c:	66 ea       	ldi	r22, 0xA6	; 166
+ 63e:	70 e0       	ldi	r23, 0x00	; 0
+ 640:	80 e0       	ldi	r24, 0x00	; 0
+ 642:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+		UART_sendString("*Opcion 1 : Marcha Imperial de Star Wars\n");
+ 646:	6f eb       	ldi	r22, 0xBF	; 191
+ 648:	70 e0       	ldi	r23, 0x00	; 0
+ 64a:	80 e0       	ldi	r24, 0x00	; 0
+ 64c:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+		UART_sendString("*Opcion 2 : Tema principal de Jurassic Park\n");
+ 650:	69 ee       	ldi	r22, 0xE9	; 233
+ 652:	70 e0       	ldi	r23, 0x00	; 0
+ 654:	80 e0       	ldi	r24, 0x00	; 0
+ 656:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+		UART_sendString("*Opcion 3 : Modo libre\n");
+ 65a:	66 e1       	ldi	r22, 0x16	; 22
+ 65c:	71 e0       	ldi	r23, 0x01	; 1
+ 65e:	80 e0       	ldi	r24, 0x00	; 0
+ 660:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+
+		while (1) {
+			respuesta = UART_recibirCaracter();
+ 664:	0e 94 61 04 	call	0x8c2	; 0x8c2 <UART_recibirCaracter>
+			if (respuesta == '1' || respuesta == '2' || respuesta == '3') {
+ 668:	9f ec       	ldi	r25, 0xCF	; 207
+ 66a:	98 0f       	add	r25, r24
+ 66c:	93 30       	cpi	r25, 0x03	; 3
+ 66e:	d0 f7       	brcc	.-12     	; 0x664 <main+0x5c>
+				break;  // Si recibe '1', '2' o '3', sale del bucle
+			}
+		}
+
+		//------------------------------------------------ ESPERA RESPUESTA
+		if (respuesta == '1') {
+ 670:	81 33       	cpi	r24, 0x31	; 49
+ 672:	41 f4       	brne	.+16     	; 0x684 <main+0x7c>
+			UART_sendString("\n\n\nReproduciendo Marcha Imperial de Star Wars...\n\n\n");
+ 674:	6e e2       	ldi	r22, 0x2E	; 46
+ 676:	71 e0       	ldi	r23, 0x01	; 1
+ 678:	80 e0       	ldi	r24, 0x00	; 0
+ 67a:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+			starWarsTheme();
+ 67e:	0e 94 11 02 	call	0x422	; 0x422 <starWarsTheme>
+ 682:	d7 cf       	rjmp	.-82     	; 0x632 <main+0x2a>
+		}
+		else if (respuesta == '2') {
+ 684:	82 33       	cpi	r24, 0x32	; 50
+ 686:	41 f4       	brne	.+16     	; 0x698 <main+0x90>
+			UART_sendString("\n\n\nReproduciendo Tema principal de Jurassic Park...\n\n\n");
+ 688:	62 e6       	ldi	r22, 0x62	; 98
+ 68a:	71 e0       	ldi	r23, 0x01	; 1
+ 68c:	80 e0       	ldi	r24, 0x00	; 0
+ 68e:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+			jurassicPark();
+ 692:	0e 94 dc 00 	call	0x1b8	; 0x1b8 <jurassicPark>
+ 696:	cd cf       	rjmp	.-102    	; 0x632 <main+0x2a>
+		}
+		else if (respuesta == '3') {
+ 698:	83 33       	cpi	r24, 0x33	; 51
+ 69a:	59 f6       	brne	.-106    	; 0x632 <main+0x2a>
+			UART_sendString("\n\n\nEntrando a Modo libre...\n\n\n");
+ 69c:	69 e9       	ldi	r22, 0x99	; 153
+ 69e:	71 e0       	ldi	r23, 0x01	; 1
+ 6a0:	80 e0       	ldi	r24, 0x00	; 0
+ 6a2:	0e 94 81 03 	call	0x702	; 0x702 <UART_sendString>
+			while (1) {
+				if(!(PIND & (1 << DO))){
+ 6a6:	4a 99       	sbic	0x09, 2	; 9
+ 6a8:	03 c0       	rjmp	.+6      	; 0x6b0 <main+0xa8>
+					do_normal();
+ 6aa:	0e 94 97 03 	call	0x72e	; 0x72e <do_normal>
+ 6ae:	fb cf       	rjmp	.-10     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PIND & (1 << RE))){
+ 6b0:	4b 99       	sbic	0x09, 3	; 9
+ 6b2:	03 c0       	rjmp	.+6      	; 0x6ba <main+0xb2>
+					re();
+ 6b4:	0e 94 ab 03 	call	0x756	; 0x756 <re>
+ 6b8:	f6 cf       	rjmp	.-20     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PIND & (1 << MI))){
+ 6ba:	4c 99       	sbic	0x09, 4	; 9
+ 6bc:	03 c0       	rjmp	.+6      	; 0x6c4 <main+0xbc>
+					mi();
+ 6be:	0e 94 bf 03 	call	0x77e	; 0x77e <mi>
+ 6c2:	f1 cf       	rjmp	.-30     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PIND & (1 << FA))){
+ 6c4:	4d 99       	sbic	0x09, 5	; 9
+ 6c6:	03 c0       	rjmp	.+6      	; 0x6ce <main+0xc6>
+					fa();
+ 6c8:	0e 94 d3 03 	call	0x7a6	; 0x7a6 <fa>
+ 6cc:	ec cf       	rjmp	.-40     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PIND & (1 << SOL))){
+ 6ce:	4e 99       	sbic	0x09, 6	; 9
+ 6d0:	03 c0       	rjmp	.+6      	; 0x6d8 <main+0xd0>
+					sol();
+ 6d2:	0e 94 e7 03 	call	0x7ce	; 0x7ce <sol>
+ 6d6:	e7 cf       	rjmp	.-50     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PIND & (1 << LA))){
+ 6d8:	4f 99       	sbic	0x09, 7	; 9
+ 6da:	03 c0       	rjmp	.+6      	; 0x6e2 <main+0xda>
+					la();
+ 6dc:	0e 94 fb 03 	call	0x7f6	; 0x7f6 <la>
+ 6e0:	e2 cf       	rjmp	.-60     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PINB & (1 << SI))){
+ 6e2:	18 99       	sbic	0x03, 0	; 3
+ 6e4:	03 c0       	rjmp	.+6      	; 0x6ec <main+0xe4>
+					si();
+ 6e6:	0e 94 0f 04 	call	0x81e	; 0x81e <si>
+ 6ea:	dd cf       	rjmp	.-70     	; 0x6a6 <main+0x9e>
+				}
+				else if(!(PINB & (1 << DO_M))){
+ 6ec:	1a 99       	sbic	0x03, 2	; 3
+ 6ee:	03 c0       	rjmp	.+6      	; 0x6f6 <main+0xee>
+					do_mayor();
+ 6f0:	0e 94 23 04 	call	0x846	; 0x846 <do_mayor>
+ 6f4:	d8 cf       	rjmp	.-80     	; 0x6a6 <main+0x9e>
+				}
+				else{
+					TCCR1A &= ~(1 << COM1A1);
+ 6f6:	e0 e8       	ldi	r30, 0x80	; 128
+ 6f8:	f0 e0       	ldi	r31, 0x00	; 0
+ 6fa:	80 81       	ld	r24, Z
+ 6fc:	8f 77       	andi	r24, 0x7F	; 127
+ 6fe:	80 83       	st	Z, r24
+ 700:	d2 cf       	rjmp	.-92     	; 0x6a6 <main+0x9e>
+
+Disassembly of section .text.__dummy_fini:
+
+000008e4 <_fini>:
+ 8e4:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+000008e6 <__funcs_on_exit>:
+ 8e6:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+000008e8 <__simulator_exit>:
+ 8e8:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+0000089e <exit>:
+ 89e:	ec 01       	movw	r28, r24
+ 8a0:	0e 94 73 04 	call	0x8e6	; 0x8e6 <__funcs_on_exit>
+ 8a4:	0e 94 72 04 	call	0x8e4	; 0x8e4 <_fini>
+ 8a8:	ce 01       	movw	r24, r28
+ 8aa:	0e 94 74 04 	call	0x8e8	; 0x8e8 <__simulator_exit>
+ 8ae:	ce 01       	movw	r24, r28
+ 8b0:	0e 94 70 04 	call	0x8e0	; 0x8e0 <_Exit>
+
+Disassembly of section .text._Exit:
+
+000008e0 <_Exit>:
+ 8e0:	0e 94 3e 00 	call	0x7c	; 0x7c <_exit>

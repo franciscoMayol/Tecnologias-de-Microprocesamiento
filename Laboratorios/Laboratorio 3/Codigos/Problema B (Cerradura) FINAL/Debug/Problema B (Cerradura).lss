@@ -1,0 +1,1272 @@
+
+Problema B (Cerradura).elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  00000a7e  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         000000ce  00000000  00000000  000000f4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000012  00800100  00800100  00000a7e  2**0
+                  ALLOC
+  3 .comment      0000002f  00000000  00000000  00000a7e  2**0
+                  CONTENTS, READONLY
+  4 .stack.descriptors.hdr 0000000e  00000000  00000000  00000aad  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 000000d0  00000000  00000000  00000abb  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001bd2  00000000  00000000  00000b8b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 000008a2  00000000  00000000  0000275d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000a6f  00000000  00000000  00002fff  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000220  00000000  00000000  00003a70  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000258  00000000  00000000  00003c90  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000e39  00000000  00000000  00003ee8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000d8  00000000  00000000  00004d21  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 13 .text         00000004  0000096c  0000096c  00000a60  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 14 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  00004dfc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .text.twi_init 00000028  0000083a  0000083a  0000092e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.twi_start 0000001a  000008d6  000008d6  000009ca  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.twi_write_cmd 0000001e  00000862  00000862  00000956  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .text.twi_write_dwr 0000001e  00000880  00000880  00000974  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 19 .text.twi_stop 00000008  0000095c  0000095c  00000a50  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.PCF8574_write 0000001c  0000089e  0000089e  00000992  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.twi_lcd_4bit_send 00000074  0000068a  0000068a  0000077e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.twi_lcd_cmd 00000018  000008f0  000008f0  000009e4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.twi_lcd_dwr 0000001c  000008ba  000008ba  000009ae  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.twi_lcd_msg 0000002c  0000080e  0000080e  00000902  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.twi_lcd_clear 00000008  00000964  00000964  00000a58  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.twi_lcd_init 00000066  00000766  00000766  0000085a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .rodata       00000010  00800112  0000097a  00000a6e  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+ 28 .text.read_keypad 000000f0  0000059a  0000059a  0000068e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 29 .text.comparar 00000068  000006fe  000006fe  000007f2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 30 .text.EEPROM_write 00000018  00000908  00000908  000009fc  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.EEPROM_read 00000012  0000094a  0000094a  00000a3e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.limpiarPantalla 00000014  00000936  00000936  00000a2a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .progmemx.data 000000bf  000000ce  000000ce  000001c2  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 34 .text.menuBienvenidos 00000042  000007cc  000007cc  000008c0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 35 .text.menuCambioClave 00000212  0000018e  0000018e  00000282  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 36 .text.main    000001fa  000003a0  000003a0  00000494  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 37 .bss.longitud_clave 00000002  00800122  00800122  00000a7e  2**0
+                  ALLOC
+ 38 .bss.intentos 00000002  00800124  00800124  00000a7e  2**0
+                  ALLOC
+ 39 .bss.lcd      00000001  00800126  00800126  00000a7e  2**0
+                  ALLOC
+ 40 .text.__dummy_fini 00000002  00000974  00000974  00000a68  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 41 .text.__dummy_funcs_on_exit 00000002  00000976  00000976  00000a6a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 42 .text.__dummy_simulator_exit 00000002  00000978  00000978  00000a6c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 43 .text.exit    00000016  00000920  00000920  00000a14  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 44 .text._Exit   00000004  00000970  00000970  00000a64  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 3d 00 	jmp	0x7a	; 0x7a <__ctors_end>
+   4:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+   8:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+   c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  10:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  14:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  18:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  1c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  20:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  24:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  28:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  2c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  30:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  34:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  38:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  3c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  40:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  44:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  48:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  4c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  50:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  54:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  58:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  5c:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  60:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+  64:	0c 94 b6 04 	jmp	0x96c	; 0x96c <__bad_interrupt>
+
+00000068 <.dinit>:
+  68:	01 00       	.word	0x0001	; ????
+  6a:	01 12       	cpse	r0, r17
+  6c:	80 01       	movw	r16, r0
+  6e:	12 01       	movw	r2, r4
+  70:	22 00       	.word	0x0022	; ????
+  72:	09 7a       	andi	r16, 0xA9	; 169
+  74:	01 22       	and	r0, r17
+  76:	01 27       	eor	r16, r17
+  78:	80 00       	.word	0x0080	; ????
+
+0000007a <__ctors_end>:
+  7a:	11 24       	eor	r1, r1
+  7c:	1f be       	out	0x3f, r1	; 63
+  7e:	cf ef       	ldi	r28, 0xFF	; 255
+  80:	d8 e0       	ldi	r29, 0x08	; 8
+  82:	de bf       	out	0x3e, r29	; 62
+  84:	cd bf       	out	0x3d, r28	; 61
+
+00000086 <__do_copy_data>:
+  86:	e8 e6       	ldi	r30, 0x68	; 104
+  88:	f0 e0       	ldi	r31, 0x00	; 0
+  8a:	40 e0       	ldi	r20, 0x00	; 0
+  8c:	17 c0       	rjmp	.+46     	; 0xbc <__do_clear_bss+0x8>
+  8e:	b5 91       	lpm	r27, Z+
+  90:	a5 91       	lpm	r26, Z+
+  92:	35 91       	lpm	r19, Z+
+  94:	25 91       	lpm	r18, Z+
+  96:	05 91       	lpm	r16, Z+
+  98:	07 fd       	sbrc	r16, 7
+  9a:	0c c0       	rjmp	.+24     	; 0xb4 <__do_clear_bss>
+  9c:	95 91       	lpm	r25, Z+
+  9e:	85 91       	lpm	r24, Z+
+  a0:	ef 01       	movw	r28, r30
+  a2:	f9 2f       	mov	r31, r25
+  a4:	e8 2f       	mov	r30, r24
+  a6:	05 90       	lpm	r0, Z+
+  a8:	0d 92       	st	X+, r0
+  aa:	a2 17       	cp	r26, r18
+  ac:	b3 07       	cpc	r27, r19
+  ae:	d9 f7       	brne	.-10     	; 0xa6 <__do_copy_data+0x20>
+  b0:	fe 01       	movw	r30, r28
+  b2:	04 c0       	rjmp	.+8      	; 0xbc <__do_clear_bss+0x8>
+
+000000b4 <__do_clear_bss>:
+  b4:	1d 92       	st	X+, r1
+  b6:	a2 17       	cp	r26, r18
+  b8:	b3 07       	cpc	r27, r19
+  ba:	e1 f7       	brne	.-8      	; 0xb4 <__do_clear_bss>
+  bc:	e9 37       	cpi	r30, 0x79	; 121
+  be:	f4 07       	cpc	r31, r20
+  c0:	31 f7       	brne	.-52     	; 0x8e <__do_copy_data+0x8>
+  c2:	0e 94 d0 01 	call	0x3a0	; 0x3a0 <main>
+  c6:	0c 94 90 04 	jmp	0x920	; 0x920 <exit>
+
+000000ca <_exit>:
+  ca:	f8 94       	cli
+
+000000cc <__stop_program>:
+  cc:	ff cf       	rjmp	.-2      	; 0xcc <__stop_program>
+
+Disassembly of section .text:
+
+0000096c <__bad_interrupt>:
+ 96c:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.twi_init:
+
+0000083a <twi_init>:
+{
+	TWCR=(1<<TWEN)|(1<<TWINT);					//--- No Acknowledgment Condition as per Datasheet
+	while (!(TWCR & (1<<TWINT)));				//--- Wait until No Acknowledgment Condition is transmitted to Slave
+	while(TW_STATUS != TW_MR_DATA_NACK);		//--- Check for Acknowledgment
+	return TWDR;								//--- Return received data
+}
+ 83a:	83 e0       	ldi	r24, 0x03	; 3
+ 83c:	87 b9       	out	0x07, r24	; 7
+ 83e:	88 b9       	out	0x08, r24	; 8
+ 840:	ec eb       	ldi	r30, 0xBC	; 188
+ 842:	f0 e0       	ldi	r31, 0x00	; 0
+ 844:	80 81       	ld	r24, Z
+ 846:	8b 7f       	andi	r24, 0xFB	; 251
+ 848:	80 83       	st	Z, r24
+ 84a:	10 92 b9 00 	sts	0x00B9, r1	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 84e:	8c e0       	ldi	r24, 0x0C	; 12
+ 850:	80 93 b8 00 	sts	0x00B8, r24	; 0x8000b8 <__TEXT_REGION_LENGTH__+0x7f80b8>
+ 854:	84 e0       	ldi	r24, 0x04	; 4
+ 856:	80 83       	st	Z, r24
+ 858:	85 e3       	ldi	r24, 0x35	; 53
+ 85a:	8a 95       	dec	r24
+ 85c:	f1 f7       	brne	.-4      	; 0x85a <twi_init+0x20>
+ 85e:	00 00       	nop
+ 860:	08 95       	ret
+
+Disassembly of section .text.twi_start:
+
+000008d6 <twi_start>:
+
+/* Function to Send Start Condition */
+
+void twi_start()
+{
+	TWCR= (1<<TWINT)|(1<<TWSTA)|(1<<TWEN);		//--- Start Condition as per Datasheet
+ 8d6:	84 ea       	ldi	r24, 0xA4	; 164
+ 8d8:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+	while(!(TWCR & (1<<TWINT)));				//--- Wait till start condition is transmitted to Slave
+ 8dc:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 8e0:	88 23       	and	r24, r24
+ 8e2:	e4 f7       	brge	.-8      	; 0x8dc <twi_start+0x6>
+	while(TW_STATUS != TW_START);				//--- Check for the acknowledgment 0x08 = TW_START
+ 8e4:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 8e8:	88 7f       	andi	r24, 0xF8	; 248
+ 8ea:	88 30       	cpi	r24, 0x08	; 8
+ 8ec:	d9 f7       	brne	.-10     	; 0x8e4 <twi_start+0xe>
+}
+ 8ee:	08 95       	ret
+
+Disassembly of section .text.twi_write_cmd:
+
+00000862 <twi_write_cmd>:
+{
+	TWCR=(1<<TWEN)|(1<<TWINT);					//--- No Acknowledgment Condition as per Datasheet
+	while (!(TWCR & (1<<TWINT)));				//--- Wait until No Acknowledgment Condition is transmitted to Slave
+	while(TW_STATUS != TW_MR_DATA_NACK);		//--- Check for Acknowledgment
+	return TWDR;								//--- Return received data
+}
+ 862:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 866:	84 e8       	ldi	r24, 0x84	; 132
+ 868:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 86c:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 870:	88 23       	and	r24, r24
+ 872:	e4 f7       	brge	.-8      	; 0x86c <twi_write_cmd+0xa>
+ 874:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 878:	88 7f       	andi	r24, 0xF8	; 248
+ 87a:	88 31       	cpi	r24, 0x18	; 24
+ 87c:	d9 f7       	brne	.-10     	; 0x874 <twi_write_cmd+0x12>
+ 87e:	08 95       	ret
+
+Disassembly of section .text.twi_write_dwr:
+
+00000880 <twi_write_dwr>:
+ 880:	80 93 bb 00 	sts	0x00BB, r24	; 0x8000bb <__TEXT_REGION_LENGTH__+0x7f80bb>
+ 884:	84 e8       	ldi	r24, 0x84	; 132
+ 886:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 88a:	80 91 bc 00 	lds	r24, 0x00BC	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 88e:	88 23       	and	r24, r24
+ 890:	e4 f7       	brge	.-8      	; 0x88a <twi_write_dwr+0xa>
+ 892:	80 91 b9 00 	lds	r24, 0x00B9	; 0x8000b9 <__TEXT_REGION_LENGTH__+0x7f80b9>
+ 896:	88 7f       	andi	r24, 0xF8	; 248
+ 898:	88 32       	cpi	r24, 0x28	; 40
+ 89a:	d9 f7       	brne	.-10     	; 0x892 <twi_write_dwr+0x12>
+ 89c:	08 95       	ret
+
+Disassembly of section .text.twi_stop:
+
+0000095c <twi_stop>:
+
+/* Function to Send Stop Condition */
+
+void twi_stop()
+{
+	TWCR = (1<<TWINT)|(1<<TWEN)|(1<<TWSTO);		//--- Stop Condition as per Datasheet
+ 95c:	84 e9       	ldi	r24, 0x94	; 148
+ 95e:	80 93 bc 00 	sts	0x00BC, r24	; 0x8000bc <__TEXT_REGION_LENGTH__+0x7f80bc>
+ 962:	08 95       	ret
+
+Disassembly of section .text.PCF8574_write:
+
+0000089e <PCF8574_write>:
+
+unsigned char lcd = 0x00;						//--- Declaring a variable as lcd for data operation
+
+/* Function to Write data in PCF8574 */
+void PCF8574_write(unsigned char x)
+{
+ 89e:	cf 93       	push	r28
+ 8a0:	c8 2f       	mov	r28, r24
+		twi_start();							//--- Start Condition 
+ 8a2:	0e 94 6b 04 	call	0x8d6	; 0x8d6 <twi_start>
+		twi_write_cmd((PCF8574 << 1)| WRITE);	//--- SLA+W is Send 0x40 
+ 8a6:	8e e4       	ldi	r24, 0x4E	; 78
+ 8a8:	0e 94 31 04 	call	0x862	; 0x862 <twi_write_cmd>
+		twi_write_dwr(x);						//--- Data to Slave Device
+ 8ac:	8c 2f       	mov	r24, r28
+ 8ae:	0e 94 40 04 	call	0x880	; 0x880 <twi_write_dwr>
+		twi_stop();								//--- Stop Condition 
+ 8b2:	0e 94 ae 04 	call	0x95c	; 0x95c <twi_stop>
+}
+ 8b6:	cf 91       	pop	r28
+ 8b8:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_4bit_send:
+
+0000068a <twi_lcd_4bit_send>:
+{
+	TWCR=(1<<TWEN)|(1<<TWINT);					//--- No Acknowledgment Condition as per Datasheet
+	while (!(TWCR & (1<<TWINT)));				//--- Wait until No Acknowledgment Condition is transmitted to Slave
+	while(TW_STATUS != TW_MR_DATA_NACK);		//--- Check for Acknowledgment
+	return TWDR;								//--- Return received data
+}
+ 68a:	cf 93       	push	r28
+ 68c:	c8 2f       	mov	r28, r24
+ 68e:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <lcd>
+ 692:	8f 70       	andi	r24, 0x0F	; 15
+ 694:	9c 2f       	mov	r25, r28
+ 696:	90 7f       	andi	r25, 0xF0	; 240
+ 698:	89 2b       	or	r24, r25
+ 69a:	84 60       	ori	r24, 0x04	; 4
+ 69c:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+ 6a0:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+ 6a4:	85 e0       	ldi	r24, 0x05	; 5
+ 6a6:	8a 95       	dec	r24
+ 6a8:	f1 f7       	brne	.-4      	; 0x6a6 <twi_lcd_4bit_send+0x1c>
+ 6aa:	00 00       	nop
+ 6ac:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <lcd>
+ 6b0:	8b 7f       	andi	r24, 0xFB	; 251
+ 6b2:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+ 6b6:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+ 6ba:	8a e1       	ldi	r24, 0x1A	; 26
+ 6bc:	8a 95       	dec	r24
+ 6be:	f1 f7       	brne	.-4      	; 0x6bc <twi_lcd_4bit_send+0x32>
+ 6c0:	00 c0       	rjmp	.+0      	; 0x6c2 <twi_lcd_4bit_send+0x38>
+ 6c2:	80 e1       	ldi	r24, 0x10	; 16
+ 6c4:	c8 9f       	mul	r28, r24
+ 6c6:	90 01       	movw	r18, r0
+ 6c8:	11 24       	eor	r1, r1
+ 6ca:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <lcd>
+ 6ce:	8f 70       	andi	r24, 0x0F	; 15
+ 6d0:	82 2b       	or	r24, r18
+ 6d2:	84 60       	ori	r24, 0x04	; 4
+ 6d4:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+ 6d8:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+ 6dc:	85 e0       	ldi	r24, 0x05	; 5
+ 6de:	8a 95       	dec	r24
+ 6e0:	f1 f7       	brne	.-4      	; 0x6de <twi_lcd_4bit_send+0x54>
+ 6e2:	00 00       	nop
+ 6e4:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <lcd>
+ 6e8:	8b 7f       	andi	r24, 0xFB	; 251
+ 6ea:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+ 6ee:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+ 6f2:	8a e1       	ldi	r24, 0x1A	; 26
+ 6f4:	8a 95       	dec	r24
+ 6f6:	f1 f7       	brne	.-4      	; 0x6f4 <twi_lcd_4bit_send+0x6a>
+ 6f8:	00 c0       	rjmp	.+0      	; 0x6fa <twi_lcd_4bit_send+0x70>
+ 6fa:	cf 91       	pop	r28
+ 6fc:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_cmd:
+
+000008f0 <twi_lcd_cmd>:
+	
+}
+
+/* Function to Write to LCD Command Register */
+void twi_lcd_cmd(const unsigned char x)
+{
+ 8f0:	cf 93       	push	r28
+ 8f2:	c8 2f       	mov	r28, r24
+	lcd = 0x08;									//--- Enable Backlight Pin
+ 8f4:	88 e0       	ldi	r24, 0x08	; 8
+ 8f6:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+	lcd &= ~(0x01);								//--- Select Command Register By RS = 0
+	PCF8574_write(lcd);							//--- Send Data From PCF8574 to LCD PORT
+ 8fa:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+	twi_lcd_4bit_send(x);						//--- Function to Write 4-bit data to LCD 	
+ 8fe:	8c 2f       	mov	r24, r28
+ 900:	0e 94 45 03 	call	0x68a	; 0x68a <twi_lcd_4bit_send>
+}
+ 904:	cf 91       	pop	r28
+ 906:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_dwr:
+
+000008ba <twi_lcd_dwr>:
+
+/* Function to Write to LCD Command Register */
+void twi_lcd_dwr(unsigned char x)
+{
+ 8ba:	cf 93       	push	r28
+ 8bc:	c8 2f       	mov	r28, r24
+	lcd |= 0x09;								//--- Enable Backlight Pin & Select Data Register By RS = 1
+ 8be:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <lcd>
+ 8c2:	89 60       	ori	r24, 0x09	; 9
+ 8c4:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+	PCF8574_write(lcd);							//--- Send Data From PCF8574 to LCD PORT	
+ 8c8:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+	twi_lcd_4bit_send(x);						//--- Function to Write 4-bit data to LCD
+ 8cc:	8c 2f       	mov	r24, r28
+ 8ce:	0e 94 45 03 	call	0x68a	; 0x68a <twi_lcd_4bit_send>
+}
+ 8d2:	cf 91       	pop	r28
+ 8d4:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_msg:
+
+0000080e <twi_lcd_msg>:
+ 80e:	cf 92       	push	r12
+ 810:	df 92       	push	r13
+ 812:	ef 92       	push	r14
+ 814:	6b 01       	movw	r12, r22
+ 816:	e8 2e       	mov	r14, r24
+ 818:	06 c0       	rjmp	.+12     	; 0x826 <twi_lcd_msg+0x18>
+ 81a:	9f ef       	ldi	r25, 0xFF	; 255
+ 81c:	c9 1a       	sub	r12, r25
+ 81e:	d9 0a       	sbc	r13, r25
+ 820:	e9 0a       	sbc	r14, r25
+ 822:	0e 94 5d 04 	call	0x8ba	; 0x8ba <twi_lcd_dwr>
+ 826:	f6 01       	movw	r30, r12
+ 828:	84 91       	lpm	r24, Z
+ 82a:	e7 fc       	sbrc	r14, 7
+ 82c:	80 81       	ld	r24, Z
+ 82e:	81 11       	cpse	r24, r1
+ 830:	f4 cf       	rjmp	.-24     	; 0x81a <twi_lcd_msg+0xc>
+ 832:	ef 90       	pop	r14
+ 834:	df 90       	pop	r13
+ 836:	cf 90       	pop	r12
+ 838:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_clear:
+
+00000964 <twi_lcd_clear>:
+}
+
+/* Function to Execute Clear LCD Command */
+void twi_lcd_clear()
+{
+	twi_lcd_cmd(0x01);
+ 964:	81 e0       	ldi	r24, 0x01	; 1
+ 966:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 96a:	08 95       	ret
+
+Disassembly of section .text.twi_lcd_init:
+
+00000766 <twi_lcd_init>:
+ 766:	84 e0       	ldi	r24, 0x04	; 4
+ 768:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <lcd>
+ 76c:	0e 94 4f 04 	call	0x89e	; 0x89e <PCF8574_write>
+ 770:	25 e8       	ldi	r18, 0x85	; 133
+ 772:	2a 95       	dec	r18
+ 774:	f1 f7       	brne	.-4      	; 0x772 <twi_lcd_init+0xc>
+ 776:	00 00       	nop
+ 778:	83 e0       	ldi	r24, 0x03	; 3
+ 77a:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 77e:	83 e0       	ldi	r24, 0x03	; 3
+ 780:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 784:	83 e0       	ldi	r24, 0x03	; 3
+ 786:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 78a:	82 e0       	ldi	r24, 0x02	; 2
+ 78c:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 790:	88 e2       	ldi	r24, 0x28	; 40
+ 792:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 796:	8f e0       	ldi	r24, 0x0F	; 15
+ 798:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 79c:	81 e0       	ldi	r24, 0x01	; 1
+ 79e:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7a2:	86 e0       	ldi	r24, 0x06	; 6
+ 7a4:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7a8:	80 e8       	ldi	r24, 0x80	; 128
+ 7aa:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7ae:	8f ef       	ldi	r24, 0xFF	; 255
+ 7b0:	93 ed       	ldi	r25, 0xD3	; 211
+ 7b2:	20 e3       	ldi	r18, 0x30	; 48
+ 7b4:	81 50       	subi	r24, 0x01	; 1
+ 7b6:	90 40       	sbci	r25, 0x00	; 0
+ 7b8:	20 40       	sbci	r18, 0x00	; 0
+ 7ba:	e1 f7       	brne	.-8      	; 0x7b4 <twi_lcd_init+0x4e>
+ 7bc:	00 c0       	rjmp	.+0      	; 0x7be <twi_lcd_init+0x58>
+ 7be:	00 00       	nop
+ 7c0:	0e 94 b2 04 	call	0x964	; 0x964 <twi_lcd_clear>
+ 7c4:	80 e8       	ldi	r24, 0x80	; 128
+ 7c6:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7ca:	08 95       	ret
+
+Disassembly of section .text.read_keypad:
+
+0000059a <read_keypad>:
+ 59a:	cf 93       	push	r28
+ 59c:	df 93       	push	r29
+ 59e:	cd b7       	in	r28, 0x3d	; 61
+ 5a0:	de b7       	in	r29, 0x3e	; 62
+ 5a2:	60 97       	sbiw	r28, 0x10	; 16
+ 5a4:	0f b6       	in	r0, 0x3f	; 63
+ 5a6:	f8 94       	cli
+ 5a8:	de bf       	out	0x3e, r29	; 62
+ 5aa:	0f be       	out	0x3f, r0	; 63
+ 5ac:	cd bf       	out	0x3d, r28	; 61
+ 5ae:	80 e1       	ldi	r24, 0x10	; 16
+ 5b0:	e2 e1       	ldi	r30, 0x12	; 18
+ 5b2:	f1 e0       	ldi	r31, 0x01	; 1
+ 5b4:	de 01       	movw	r26, r28
+ 5b6:	11 96       	adiw	r26, 0x01	; 1
+ 5b8:	01 90       	ld	r0, Z+
+ 5ba:	0d 92       	st	X+, r0
+ 5bc:	8a 95       	dec	r24
+ 5be:	e1 f7       	brne	.-8      	; 0x5b8 <read_keypad+0x1e>
+ 5c0:	30 e0       	ldi	r19, 0x00	; 0
+ 5c2:	56 c0       	rjmp	.+172    	; 0x670 <read_keypad+0xd6>
+ 5c4:	43 2f       	mov	r20, r19
+ 5c6:	50 e0       	ldi	r21, 0x00	; 0
+ 5c8:	81 e0       	ldi	r24, 0x01	; 1
+ 5ca:	90 e0       	ldi	r25, 0x00	; 0
+ 5cc:	03 2e       	mov	r0, r19
+ 5ce:	02 c0       	rjmp	.+4      	; 0x5d4 <read_keypad+0x3a>
+ 5d0:	88 0f       	add	r24, r24
+ 5d2:	99 1f       	adc	r25, r25
+ 5d4:	0a 94       	dec	r0
+ 5d6:	e2 f7       	brpl	.-8      	; 0x5d0 <read_keypad+0x36>
+ 5d8:	80 95       	com	r24
+ 5da:	85 b9       	out	0x05, r24	; 5
+ 5dc:	22 e0       	ldi	r18, 0x02	; 2
+ 5de:	44 c0       	rjmp	.+136    	; 0x668 <read_keypad+0xce>
+ 5e0:	89 b1       	in	r24, 0x09	; 9
+ 5e2:	62 2f       	mov	r22, r18
+ 5e4:	70 e0       	ldi	r23, 0x00	; 0
+ 5e6:	90 e0       	ldi	r25, 0x00	; 0
+ 5e8:	02 2e       	mov	r0, r18
+ 5ea:	02 c0       	rjmp	.+4      	; 0x5f0 <read_keypad+0x56>
+ 5ec:	95 95       	asr	r25
+ 5ee:	87 95       	ror	r24
+ 5f0:	0a 94       	dec	r0
+ 5f2:	e2 f7       	brpl	.-8      	; 0x5ec <read_keypad+0x52>
+ 5f4:	80 fd       	sbrc	r24, 0
+ 5f6:	37 c0       	rjmp	.+110    	; 0x666 <read_keypad+0xcc>
+ 5f8:	8f ef       	ldi	r24, 0xFF	; 255
+ 5fa:	99 ef       	ldi	r25, 0xF9	; 249
+ 5fc:	e0 e0       	ldi	r30, 0x00	; 0
+ 5fe:	81 50       	subi	r24, 0x01	; 1
+ 600:	90 40       	sbci	r25, 0x00	; 0
+ 602:	e0 40       	sbci	r30, 0x00	; 0
+ 604:	e1 f7       	brne	.-8      	; 0x5fe <read_keypad+0x64>
+ 606:	00 c0       	rjmp	.+0      	; 0x608 <read_keypad+0x6e>
+ 608:	00 00       	nop
+ 60a:	89 b1       	in	r24, 0x09	; 9
+ 60c:	90 e0       	ldi	r25, 0x00	; 0
+ 60e:	02 2e       	mov	r0, r18
+ 610:	02 c0       	rjmp	.+4      	; 0x616 <read_keypad+0x7c>
+ 612:	95 95       	asr	r25
+ 614:	87 95       	ror	r24
+ 616:	0a 94       	dec	r0
+ 618:	e2 f7       	brpl	.-8      	; 0x612 <read_keypad+0x78>
+ 61a:	80 fd       	sbrc	r24, 0
+ 61c:	24 c0       	rjmp	.+72     	; 0x666 <read_keypad+0xcc>
+ 61e:	89 b1       	in	r24, 0x09	; 9
+ 620:	90 e0       	ldi	r25, 0x00	; 0
+ 622:	06 2e       	mov	r0, r22
+ 624:	02 c0       	rjmp	.+4      	; 0x62a <read_keypad+0x90>
+ 626:	95 95       	asr	r25
+ 628:	87 95       	ror	r24
+ 62a:	0a 94       	dec	r0
+ 62c:	e2 f7       	brpl	.-8      	; 0x626 <read_keypad+0x8c>
+ 62e:	80 ff       	sbrs	r24, 0
+ 630:	f6 cf       	rjmp	.-20     	; 0x61e <read_keypad+0x84>
+ 632:	2f ef       	ldi	r18, 0xFF	; 255
+ 634:	89 ef       	ldi	r24, 0xF9	; 249
+ 636:	90 e0       	ldi	r25, 0x00	; 0
+ 638:	21 50       	subi	r18, 0x01	; 1
+ 63a:	80 40       	sbci	r24, 0x00	; 0
+ 63c:	90 40       	sbci	r25, 0x00	; 0
+ 63e:	e1 f7       	brne	.-8      	; 0x638 <read_keypad+0x9e>
+ 640:	00 c0       	rjmp	.+0      	; 0x642 <read_keypad+0xa8>
+ 642:	00 00       	nop
+ 644:	62 50       	subi	r22, 0x02	; 2
+ 646:	71 09       	sbc	r23, r1
+ 648:	fa 01       	movw	r30, r20
+ 64a:	ee 0f       	add	r30, r30
+ 64c:	ff 1f       	adc	r31, r31
+ 64e:	ee 0f       	add	r30, r30
+ 650:	ff 1f       	adc	r31, r31
+ 652:	81 e0       	ldi	r24, 0x01	; 1
+ 654:	90 e0       	ldi	r25, 0x00	; 0
+ 656:	8c 0f       	add	r24, r28
+ 658:	9d 1f       	adc	r25, r29
+ 65a:	e8 0f       	add	r30, r24
+ 65c:	f9 1f       	adc	r31, r25
+ 65e:	e6 0f       	add	r30, r22
+ 660:	f7 1f       	adc	r31, r23
+ 662:	80 81       	ld	r24, Z
+ 664:	09 c0       	rjmp	.+18     	; 0x678 <read_keypad+0xde>
+ 666:	2f 5f       	subi	r18, 0xFF	; 255
+ 668:	26 30       	cpi	r18, 0x06	; 6
+ 66a:	08 f4       	brcc	.+2      	; 0x66e <read_keypad+0xd4>
+ 66c:	b9 cf       	rjmp	.-142    	; 0x5e0 <read_keypad+0x46>
+ 66e:	3f 5f       	subi	r19, 0xFF	; 255
+ 670:	34 30       	cpi	r19, 0x04	; 4
+ 672:	08 f4       	brcc	.+2      	; 0x676 <read_keypad+0xdc>
+ 674:	a7 cf       	rjmp	.-178    	; 0x5c4 <read_keypad+0x2a>
+ 676:	80 e0       	ldi	r24, 0x00	; 0
+ 678:	60 96       	adiw	r28, 0x10	; 16
+ 67a:	0f b6       	in	r0, 0x3f	; 63
+ 67c:	f8 94       	cli
+ 67e:	de bf       	out	0x3e, r29	; 62
+ 680:	0f be       	out	0x3f, r0	; 63
+ 682:	cd bf       	out	0x3d, r28	; 61
+ 684:	df 91       	pop	r29
+ 686:	cf 91       	pop	r28
+ 688:	08 95       	ret
+
+Disassembly of section .text.comparar:
+
+000006fe <comparar>:
+ 6fe:	0f 93       	push	r16
+ 700:	1f 93       	push	r17
+ 702:	cf 93       	push	r28
+ 704:	df 93       	push	r29
+ 706:	00 d0       	rcall	.+0      	; 0x708 <comparar+0xa>
+ 708:	cd b7       	in	r28, 0x3d	; 61
+ 70a:	de b7       	in	r29, 0x3e	; 62
+ 70c:	fa 01       	movw	r30, r20
+ 70e:	20 81       	ld	r18, Z
+ 710:	31 81       	ldd	r19, Z+1	; 0x01
+ 712:	e0 91 22 01 	lds	r30, 0x0122	; 0x800122 <longitud_clave>
+ 716:	f0 91 23 01 	lds	r31, 0x0123	; 0x800123 <longitud_clave+0x1>
+ 71a:	2e 17       	cp	r18, r30
+ 71c:	3f 07       	cpc	r19, r31
+ 71e:	e4 f4       	brge	.+56     	; 0x758 <comparar+0x5a>
+ 720:	8a 01       	movw	r16, r20
+ 722:	fb 01       	movw	r30, r22
+ 724:	e2 0f       	add	r30, r18
+ 726:	f3 1f       	adc	r31, r19
+ 728:	80 83       	st	Z, r24
+ 72a:	89 83       	std	Y+1, r24	; 0x01
+ 72c:	1a 82       	std	Y+2, r1	; 0x02
+ 72e:	be 01       	movw	r22, r28
+ 730:	6f 5f       	subi	r22, 0xFF	; 255
+ 732:	7f 4f       	sbci	r23, 0xFF	; 255
+ 734:	80 e8       	ldi	r24, 0x80	; 128
+ 736:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 73a:	ff ef       	ldi	r31, 0xFF	; 255
+ 73c:	22 e5       	ldi	r18, 0x52	; 82
+ 73e:	87 e0       	ldi	r24, 0x07	; 7
+ 740:	f1 50       	subi	r31, 0x01	; 1
+ 742:	20 40       	sbci	r18, 0x00	; 0
+ 744:	80 40       	sbci	r24, 0x00	; 0
+ 746:	e1 f7       	brne	.-8      	; 0x740 <comparar+0x42>
+ 748:	00 c0       	rjmp	.+0      	; 0x74a <comparar+0x4c>
+ 74a:	00 00       	nop
+ 74c:	f8 01       	movw	r30, r16
+ 74e:	80 81       	ld	r24, Z
+ 750:	91 81       	ldd	r25, Z+1	; 0x01
+ 752:	01 96       	adiw	r24, 0x01	; 1
+ 754:	91 83       	std	Z+1, r25	; 0x01
+ 756:	80 83       	st	Z, r24
+ 758:	0f 90       	pop	r0
+ 75a:	0f 90       	pop	r0
+ 75c:	df 91       	pop	r29
+ 75e:	cf 91       	pop	r28
+ 760:	1f 91       	pop	r17
+ 762:	0f 91       	pop	r16
+ 764:	08 95       	ret
+
+Disassembly of section .text.EEPROM_write:
+
+00000908 <EEPROM_write>:
+	}
+}
+
+// Función para escribir en la EEPROM
+void EEPROM_write(uint16_t address, uint8_t data){
+	while (EECR & (1 << EEPE));
+ 908:	f9 99       	sbic	0x1f, 1	; 31
+ 90a:	fe cf       	rjmp	.-4      	; 0x908 <EEPROM_write>
+	EEAR = address;
+ 90c:	92 bd       	out	0x22, r25	; 34
+ 90e:	81 bd       	out	0x21, r24	; 33
+	EEDR = data;
+ 910:	60 bd       	out	0x20, r22	; 32
+	EECR |= (1 << EEMPE);  // Habilitar la escritura en EEPROM
+ 912:	8f b3       	in	r24, 0x1f	; 31
+ 914:	84 60       	ori	r24, 0x04	; 4
+ 916:	8f bb       	out	0x1f, r24	; 31
+	EECR |= (1 << EEPE);   // Iniciar la escritura
+ 918:	8f b3       	in	r24, 0x1f	; 31
+ 91a:	82 60       	ori	r24, 0x02	; 2
+ 91c:	8f bb       	out	0x1f, r24	; 31
+ 91e:	08 95       	ret
+
+Disassembly of section .text.EEPROM_read:
+
+0000094a <EEPROM_read>:
+}
+
+// Función para leer desde la EEPROM
+uint8_t EEPROM_read(uint16_t address){
+	while (EECR & (1 << EEPE));
+ 94a:	f9 99       	sbic	0x1f, 1	; 31
+ 94c:	fe cf       	rjmp	.-4      	; 0x94a <EEPROM_read>
+	EEAR = address;
+ 94e:	92 bd       	out	0x22, r25	; 34
+ 950:	81 bd       	out	0x21, r24	; 33
+	EECR |= (1 << EERE);   // Iniciar la lectura
+ 952:	8f b3       	in	r24, 0x1f	; 31
+ 954:	81 60       	ori	r24, 0x01	; 1
+ 956:	8f bb       	out	0x1f, r24	; 31
+	return EEDR;
+ 958:	80 b5       	in	r24, 0x20	; 32
+}
+ 95a:	08 95       	ret
+
+Disassembly of section .text.limpiarPantalla:
+
+00000936 <limpiarPantalla>:
+	_delay_ms(2000);
+}
+
+// Función para limpiar la pantalla LCD
+void limpiarPantalla(void){
+	twi_lcd_cmd(0x01);  
+ 936:	81 e0       	ldi	r24, 0x01	; 1
+ 938:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 93c:	8f e3       	ldi	r24, 0x3F	; 63
+ 93e:	9f e1       	ldi	r25, 0x1F	; 31
+ 940:	01 97       	sbiw	r24, 0x01	; 1
+ 942:	f1 f7       	brne	.-4      	; 0x940 <limpiarPantalla+0xa>
+ 944:	00 c0       	rjmp	.+0      	; 0x946 <limpiarPantalla+0x10>
+ 946:	00 00       	nop
+ 948:	08 95       	ret
+
+Disassembly of section .text.menuBienvenidos:
+
+000007cc <menuBienvenidos>:
+ 7cc:	0e 94 1d 04 	call	0x83a	; 0x83a <twi_init>
+ 7d0:	0e 94 b3 03 	call	0x766	; 0x766 <twi_lcd_init>
+ 7d4:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 7d8:	8c e0       	ldi	r24, 0x0C	; 12
+ 7da:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7de:	8f e1       	ldi	r24, 0x1F	; 31
+ 7e0:	9e e4       	ldi	r25, 0x4E	; 78
+ 7e2:	01 97       	sbiw	r24, 0x01	; 1
+ 7e4:	f1 f7       	brne	.-4      	; 0x7e2 <menuBienvenidos+0x16>
+ 7e6:	00 c0       	rjmp	.+0      	; 0x7e8 <menuBienvenidos+0x1c>
+ 7e8:	00 00       	nop
+ 7ea:	80 e8       	ldi	r24, 0x80	; 128
+ 7ec:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 7f0:	6e ec       	ldi	r22, 0xCE	; 206
+ 7f2:	70 e0       	ldi	r23, 0x00	; 0
+ 7f4:	80 e0       	ldi	r24, 0x00	; 0
+ 7f6:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 7fa:	9f ef       	ldi	r25, 0xFF	; 255
+ 7fc:	27 ea       	ldi	r18, 0xA7	; 167
+ 7fe:	81 e6       	ldi	r24, 0x61	; 97
+ 800:	91 50       	subi	r25, 0x01	; 1
+ 802:	20 40       	sbci	r18, 0x00	; 0
+ 804:	80 40       	sbci	r24, 0x00	; 0
+ 806:	e1 f7       	brne	.-8      	; 0x800 <__DATA_REGION_LENGTH__>
+ 808:	00 c0       	rjmp	.+0      	; 0x80a <__DATA_REGION_LENGTH__+0xa>
+ 80a:	00 00       	nop
+ 80c:	08 95       	ret
+
+Disassembly of section .text.menuCambioClave:
+
+0000018e <menuCambioClave>:
+ 18e:	cf 92       	push	r12
+ 190:	df 92       	push	r13
+ 192:	ef 92       	push	r14
+ 194:	ff 92       	push	r15
+ 196:	0f 93       	push	r16
+ 198:	1f 93       	push	r17
+ 19a:	cf 93       	push	r28
+ 19c:	df 93       	push	r29
+ 19e:	00 d0       	rcall	.+0      	; 0x1a0 <menuCambioClave+0x12>
+ 1a0:	cd b7       	in	r28, 0x3d	; 61
+ 1a2:	de b7       	in	r29, 0x3e	; 62
+ 1a4:	8b b1       	in	r24, 0x0b	; 11
+ 1a6:	8f 77       	andi	r24, 0x7F	; 127
+ 1a8:	8b b9       	out	0x0b, r24	; 11
+ 1aa:	10 e0       	ldi	r17, 0x00	; 0
+ 1ac:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 1b0:	80 e8       	ldi	r24, 0x80	; 128
+ 1b2:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 1b6:	e1 2c       	mov	r14, r1
+ 1b8:	f1 2c       	mov	r15, r1
+ 1ba:	e4 c0       	rjmp	.+456    	; 0x384 <menuCambioClave+0x1f6>
+ 1bc:	6f ed       	ldi	r22, 0xDF	; 223
+ 1be:	70 e0       	ldi	r23, 0x00	; 0
+ 1c0:	80 e0       	ldi	r24, 0x00	; 0
+ 1c2:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 1c6:	8f e9       	ldi	r24, 0x9F	; 159
+ 1c8:	9f e0       	ldi	r25, 0x0F	; 15
+ 1ca:	01 97       	sbiw	r24, 0x01	; 1
+ 1cc:	f1 f7       	brne	.-4      	; 0x1ca <menuCambioClave+0x3c>
+ 1ce:	00 c0       	rjmp	.+0      	; 0x1d0 <menuCambioClave+0x42>
+ 1d0:	00 00       	nop
+ 1d2:	80 ec       	ldi	r24, 0xC0	; 192
+ 1d4:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 1d8:	8f e9       	ldi	r24, 0x9F	; 159
+ 1da:	9f e0       	ldi	r25, 0x0F	; 15
+ 1dc:	01 97       	sbiw	r24, 0x01	; 1
+ 1de:	f1 f7       	brne	.-4      	; 0x1dc <menuCambioClave+0x4e>
+ 1e0:	00 c0       	rjmp	.+0      	; 0x1e2 <menuCambioClave+0x54>
+ 1e2:	00 00       	nop
+ 1e4:	6e ee       	ldi	r22, 0xEE	; 238
+ 1e6:	70 e0       	ldi	r23, 0x00	; 0
+ 1e8:	80 e0       	ldi	r24, 0x00	; 0
+ 1ea:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 1ee:	0e 94 cd 02 	call	0x59a	; 0x59a <read_keypad>
+ 1f2:	81 34       	cpi	r24, 0x41	; 65
+ 1f4:	09 f0       	breq	.+2      	; 0x1f8 <menuCambioClave+0x6a>
+ 1f6:	c3 c0       	rjmp	.+390    	; 0x37e <menuCambioClave+0x1f0>
+ 1f8:	10 e0       	ldi	r17, 0x00	; 0
+ 1fa:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 1fe:	80 e8       	ldi	r24, 0x80	; 128
+ 200:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 204:	43 c0       	rjmp	.+134    	; 0x28c <menuCambioClave+0xfe>
+ 206:	6f ef       	ldi	r22, 0xFF	; 255
+ 208:	70 e0       	ldi	r23, 0x00	; 0
+ 20a:	80 e0       	ldi	r24, 0x00	; 0
+ 20c:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 210:	8f e9       	ldi	r24, 0x9F	; 159
+ 212:	9f e0       	ldi	r25, 0x0F	; 15
+ 214:	01 97       	sbiw	r24, 0x01	; 1
+ 216:	f1 f7       	brne	.-4      	; 0x214 <menuCambioClave+0x86>
+ 218:	00 c0       	rjmp	.+0      	; 0x21a <menuCambioClave+0x8c>
+ 21a:	00 00       	nop
+ 21c:	80 ec       	ldi	r24, 0xC0	; 192
+ 21e:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 222:	8f e9       	ldi	r24, 0x9F	; 159
+ 224:	9f e0       	ldi	r25, 0x0F	; 15
+ 226:	01 97       	sbiw	r24, 0x01	; 1
+ 228:	f1 f7       	brne	.-4      	; 0x226 <menuCambioClave+0x98>
+ 22a:	00 c0       	rjmp	.+0      	; 0x22c <menuCambioClave+0x9e>
+ 22c:	00 00       	nop
+ 22e:	60 e1       	ldi	r22, 0x10	; 16
+ 230:	71 e0       	ldi	r23, 0x01	; 1
+ 232:	80 e0       	ldi	r24, 0x00	; 0
+ 234:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 238:	0e 94 cd 02 	call	0x59a	; 0x59a <read_keypad>
+ 23c:	18 2f       	mov	r17, r24
+ 23e:	84 33       	cpi	r24, 0x34	; 52
+ 240:	51 f4       	brne	.+20     	; 0x256 <menuCambioClave+0xc8>
+ 242:	64 e0       	ldi	r22, 0x04	; 4
+ 244:	80 e0       	ldi	r24, 0x00	; 0
+ 246:	90 e0       	ldi	r25, 0x00	; 0
+ 248:	0e 94 84 04 	call	0x908	; 0x908 <EEPROM_write>
+ 24c:	68 94       	set
+ 24e:	ee 24       	eor	r14, r14
+ 250:	e2 f8       	bld	r14, 2
+ 252:	f1 2c       	mov	r15, r1
+ 254:	1e c0       	rjmp	.+60     	; 0x292 <menuCambioClave+0x104>
+ 256:	85 33       	cpi	r24, 0x35	; 53
+ 258:	59 f4       	brne	.+22     	; 0x270 <menuCambioClave+0xe2>
+ 25a:	65 e0       	ldi	r22, 0x05	; 5
+ 25c:	80 e0       	ldi	r24, 0x00	; 0
+ 25e:	90 e0       	ldi	r25, 0x00	; 0
+ 260:	0e 94 84 04 	call	0x908	; 0x908 <EEPROM_write>
+ 264:	0f 2e       	mov	r0, r31
+ 266:	f5 e0       	ldi	r31, 0x05	; 5
+ 268:	ef 2e       	mov	r14, r31
+ 26a:	f1 2c       	mov	r15, r1
+ 26c:	f0 2d       	mov	r31, r0
+ 26e:	11 c0       	rjmp	.+34     	; 0x292 <menuCambioClave+0x104>
+ 270:	86 33       	cpi	r24, 0x36	; 54
+ 272:	59 f4       	brne	.+22     	; 0x28a <menuCambioClave+0xfc>
+ 274:	66 e0       	ldi	r22, 0x06	; 6
+ 276:	80 e0       	ldi	r24, 0x00	; 0
+ 278:	90 e0       	ldi	r25, 0x00	; 0
+ 27a:	0e 94 84 04 	call	0x908	; 0x908 <EEPROM_write>
+ 27e:	0f 2e       	mov	r0, r31
+ 280:	f6 e0       	ldi	r31, 0x06	; 6
+ 282:	ef 2e       	mov	r14, r31
+ 284:	f1 2c       	mov	r15, r1
+ 286:	f0 2d       	mov	r31, r0
+ 288:	04 c0       	rjmp	.+8      	; 0x292 <menuCambioClave+0x104>
+ 28a:	10 e0       	ldi	r17, 0x00	; 0
+ 28c:	11 23       	and	r17, r17
+ 28e:	09 f4       	brne	.+2      	; 0x292 <menuCambioClave+0x104>
+ 290:	ba cf       	rjmp	.-140    	; 0x206 <menuCambioClave+0x78>
+ 292:	8f e9       	ldi	r24, 0x9F	; 159
+ 294:	9f e0       	ldi	r25, 0x0F	; 15
+ 296:	01 97       	sbiw	r24, 0x01	; 1
+ 298:	f1 f7       	brne	.-4      	; 0x296 <menuCambioClave+0x108>
+ 29a:	00 c0       	rjmp	.+0      	; 0x29c <menuCambioClave+0x10e>
+ 29c:	00 00       	nop
+ 29e:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 2a2:	80 e8       	ldi	r24, 0x80	; 128
+ 2a4:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 2a8:	61 e2       	ldi	r22, 0x21	; 33
+ 2aa:	71 e0       	ldi	r23, 0x01	; 1
+ 2ac:	80 e0       	ldi	r24, 0x00	; 0
+ 2ae:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 2b2:	8f e9       	ldi	r24, 0x9F	; 159
+ 2b4:	9f e0       	ldi	r25, 0x0F	; 15
+ 2b6:	01 97       	sbiw	r24, 0x01	; 1
+ 2b8:	f1 f7       	brne	.-4      	; 0x2b6 <menuCambioClave+0x128>
+ 2ba:	00 c0       	rjmp	.+0      	; 0x2bc <menuCambioClave+0x12e>
+ 2bc:	00 00       	nop
+ 2be:	80 ec       	ldi	r24, 0xC0	; 192
+ 2c0:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 2c4:	8f e9       	ldi	r24, 0x9F	; 159
+ 2c6:	9f e0       	ldi	r25, 0x0F	; 15
+ 2c8:	01 97       	sbiw	r24, 0x01	; 1
+ 2ca:	f1 f7       	brne	.-4      	; 0x2c8 <menuCambioClave+0x13a>
+ 2cc:	00 c0       	rjmp	.+0      	; 0x2ce <menuCambioClave+0x140>
+ 2ce:	00 00       	nop
+ 2d0:	c1 2c       	mov	r12, r1
+ 2d2:	d1 2c       	mov	r13, r1
+ 2d4:	29 c0       	rjmp	.+82     	; 0x328 <menuCambioClave+0x19a>
+ 2d6:	0e 94 cd 02 	call	0x59a	; 0x59a <read_keypad>
+ 2da:	08 2f       	mov	r16, r24
+ 2dc:	88 23       	and	r24, r24
+ 2de:	21 f1       	breq	.+72     	; 0x328 <menuCambioClave+0x19a>
+ 2e0:	89 83       	std	Y+1, r24	; 0x01
+ 2e2:	1a 82       	std	Y+2, r1	; 0x02
+ 2e4:	be 01       	movw	r22, r28
+ 2e6:	6f 5f       	subi	r22, 0xFF	; 255
+ 2e8:	7f 4f       	sbci	r23, 0xFF	; 255
+ 2ea:	80 e8       	ldi	r24, 0x80	; 128
+ 2ec:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 2f0:	9f ef       	ldi	r25, 0xFF	; 255
+ 2f2:	22 e5       	ldi	r18, 0x52	; 82
+ 2f4:	87 e0       	ldi	r24, 0x07	; 7
+ 2f6:	91 50       	subi	r25, 0x01	; 1
+ 2f8:	20 40       	sbci	r18, 0x00	; 0
+ 2fa:	80 40       	sbci	r24, 0x00	; 0
+ 2fc:	e1 f7       	brne	.-8      	; 0x2f6 <menuCambioClave+0x168>
+ 2fe:	00 c0       	rjmp	.+0      	; 0x300 <menuCambioClave+0x172>
+ 300:	00 00       	nop
+ 302:	60 ed       	ldi	r22, 0xD0	; 208
+ 304:	60 0f       	add	r22, r16
+ 306:	c6 01       	movw	r24, r12
+ 308:	40 96       	adiw	r24, 0x10	; 16
+ 30a:	0e 94 84 04 	call	0x908	; 0x908 <EEPROM_write>
+ 30e:	80 2f       	mov	r24, r16
+ 310:	90 e0       	ldi	r25, 0x00	; 0
+ 312:	c0 97       	sbiw	r24, 0x30	; 48
+ 314:	f6 01       	movw	r30, r12
+ 316:	ee 0f       	add	r30, r30
+ 318:	ff 1f       	adc	r31, r31
+ 31a:	ea 5f       	subi	r30, 0xFA	; 250
+ 31c:	fe 4f       	sbci	r31, 0xFE	; 254
+ 31e:	91 83       	std	Z+1, r25	; 0x01
+ 320:	80 83       	st	Z, r24
+ 322:	9f ef       	ldi	r25, 0xFF	; 255
+ 324:	c9 1a       	sub	r12, r25
+ 326:	d9 0a       	sbc	r13, r25
+ 328:	ce 14       	cp	r12, r14
+ 32a:	df 04       	cpc	r13, r15
+ 32c:	a4 f2       	brlt	.-88     	; 0x2d6 <menuCambioClave+0x148>
+ 32e:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 332:	80 e8       	ldi	r24, 0x80	; 128
+ 334:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 338:	6e e2       	ldi	r22, 0x2E	; 46
+ 33a:	71 e0       	ldi	r23, 0x01	; 1
+ 33c:	80 e0       	ldi	r24, 0x00	; 0
+ 33e:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 342:	8f e9       	ldi	r24, 0x9F	; 159
+ 344:	9f e0       	ldi	r25, 0x0F	; 15
+ 346:	01 97       	sbiw	r24, 0x01	; 1
+ 348:	f1 f7       	brne	.-4      	; 0x346 <menuCambioClave+0x1b8>
+ 34a:	00 c0       	rjmp	.+0      	; 0x34c <menuCambioClave+0x1be>
+ 34c:	00 00       	nop
+ 34e:	80 ec       	ldi	r24, 0xC0	; 192
+ 350:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 354:	8f e9       	ldi	r24, 0x9F	; 159
+ 356:	9f e0       	ldi	r25, 0x0F	; 15
+ 358:	01 97       	sbiw	r24, 0x01	; 1
+ 35a:	f1 f7       	brne	.-4      	; 0x358 <menuCambioClave+0x1ca>
+ 35c:	00 c0       	rjmp	.+0      	; 0x35e <menuCambioClave+0x1d0>
+ 35e:	00 00       	nop
+ 360:	6d e3       	ldi	r22, 0x3D	; 61
+ 362:	71 e0       	ldi	r23, 0x01	; 1
+ 364:	80 e0       	ldi	r24, 0x00	; 0
+ 366:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 36a:	9f ef       	ldi	r25, 0xFF	; 255
+ 36c:	23 ed       	ldi	r18, 0xD3	; 211
+ 36e:	80 e3       	ldi	r24, 0x30	; 48
+ 370:	91 50       	subi	r25, 0x01	; 1
+ 372:	20 40       	sbci	r18, 0x00	; 0
+ 374:	80 40       	sbci	r24, 0x00	; 0
+ 376:	e1 f7       	brne	.-8      	; 0x370 <menuCambioClave+0x1e2>
+ 378:	00 c0       	rjmp	.+0      	; 0x37a <menuCambioClave+0x1ec>
+ 37a:	00 00       	nop
+ 37c:	03 c0       	rjmp	.+6      	; 0x384 <menuCambioClave+0x1f6>
+ 37e:	82 34       	cpi	r24, 0x42	; 66
+ 380:	21 f0       	breq	.+8      	; 0x38a <menuCambioClave+0x1fc>
+ 382:	10 e0       	ldi	r17, 0x00	; 0
+ 384:	11 23       	and	r17, r17
+ 386:	09 f4       	brne	.+2      	; 0x38a <menuCambioClave+0x1fc>
+ 388:	19 cf       	rjmp	.-462    	; 0x1bc <menuCambioClave+0x2e>
+ 38a:	0f 90       	pop	r0
+ 38c:	0f 90       	pop	r0
+ 38e:	df 91       	pop	r29
+ 390:	cf 91       	pop	r28
+ 392:	1f 91       	pop	r17
+ 394:	0f 91       	pop	r16
+ 396:	ff 90       	pop	r15
+ 398:	ef 90       	pop	r14
+ 39a:	df 90       	pop	r13
+ 39c:	cf 90       	pop	r12
+ 39e:	08 95       	ret
+
+Disassembly of section .text.main:
+
+000003a0 <main>:
+ 3a0:	cf 93       	push	r28
+ 3a2:	df 93       	push	r29
+ 3a4:	00 d0       	rcall	.+0      	; 0x3a6 <main+0x6>
+ 3a6:	cd b7       	in	r28, 0x3d	; 61
+ 3a8:	de b7       	in	r29, 0x3e	; 62
+ 3aa:	80 e0       	ldi	r24, 0x00	; 0
+ 3ac:	90 e0       	ldi	r25, 0x00	; 0
+ 3ae:	0e 94 a5 04 	call	0x94a	; 0x94a <EEPROM_read>
+ 3b2:	90 e0       	ldi	r25, 0x00	; 0
+ 3b4:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <longitud_clave+0x1>
+ 3b8:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <longitud_clave>
+ 3bc:	82 ec       	ldi	r24, 0xC2	; 194
+ 3be:	8a b9       	out	0x0a, r24	; 10
+ 3c0:	8f ef       	ldi	r24, 0xFF	; 255
+ 3c2:	84 b9       	out	0x04, r24	; 4
+ 3c4:	8b b1       	in	r24, 0x0b	; 11
+ 3c6:	8c 63       	ori	r24, 0x3C	; 60
+ 3c8:	8b b9       	out	0x0b, r24	; 11
+ 3ca:	00 e0       	ldi	r16, 0x00	; 0
+ 3cc:	10 e0       	ldi	r17, 0x00	; 0
+ 3ce:	0e c0       	rjmp	.+28     	; 0x3ec <main+0x4c>
+ 3d0:	c8 01       	movw	r24, r16
+ 3d2:	40 96       	adiw	r24, 0x10	; 16
+ 3d4:	0e 94 a5 04 	call	0x94a	; 0x94a <EEPROM_read>
+ 3d8:	f8 01       	movw	r30, r16
+ 3da:	ee 0f       	add	r30, r30
+ 3dc:	ff 1f       	adc	r31, r31
+ 3de:	ea 5f       	subi	r30, 0xFA	; 250
+ 3e0:	fe 4f       	sbci	r31, 0xFE	; 254
+ 3e2:	90 e0       	ldi	r25, 0x00	; 0
+ 3e4:	91 83       	std	Z+1, r25	; 0x01
+ 3e6:	80 83       	st	Z, r24
+ 3e8:	0f 5f       	subi	r16, 0xFF	; 255
+ 3ea:	1f 4f       	sbci	r17, 0xFF	; 255
+ 3ec:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <longitud_clave>
+ 3f0:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <longitud_clave+0x1>
+ 3f4:	08 17       	cp	r16, r24
+ 3f6:	19 07       	cpc	r17, r25
+ 3f8:	5c f3       	brlt	.-42     	; 0x3d0 <main+0x30>
+ 3fa:	0e 94 e6 03 	call	0x7cc	; 0x7cc <menuBienvenidos>
+ 3fe:	80 e0       	ldi	r24, 0x00	; 0
+ 400:	90 e0       	ldi	r25, 0x00	; 0
+ 402:	0e 94 a5 04 	call	0x94a	; 0x94a <EEPROM_read>
+ 406:	90 e0       	ldi	r25, 0x00	; 0
+ 408:	90 93 23 01 	sts	0x0123, r25	; 0x800123 <longitud_clave+0x1>
+ 40c:	80 93 22 01 	sts	0x0122, r24	; 0x800122 <longitud_clave>
+ 410:	1a 82       	std	Y+2, r1	; 0x02
+ 412:	19 82       	std	Y+1, r1	; 0x01
+ 414:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 418:	80 e8       	ldi	r24, 0x80	; 128
+ 41a:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 41e:	6b e4       	ldi	r22, 0x4B	; 75
+ 420:	71 e0       	ldi	r23, 0x01	; 1
+ 422:	80 e0       	ldi	r24, 0x00	; 0
+ 424:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 428:	2f ef       	ldi	r18, 0xFF	; 255
+ 42a:	81 ee       	ldi	r24, 0xE1	; 225
+ 42c:	94 e0       	ldi	r25, 0x04	; 4
+ 42e:	21 50       	subi	r18, 0x01	; 1
+ 430:	80 40       	sbci	r24, 0x00	; 0
+ 432:	90 40       	sbci	r25, 0x00	; 0
+ 434:	e1 f7       	brne	.-8      	; 0x42e <__EEPROM_REGION_LENGTH__+0x2e>
+ 436:	00 c0       	rjmp	.+0      	; 0x438 <__EEPROM_REGION_LENGTH__+0x38>
+ 438:	00 00       	nop
+ 43a:	80 ec       	ldi	r24, 0xC0	; 192
+ 43c:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 440:	2f ef       	ldi	r18, 0xFF	; 255
+ 442:	81 ee       	ldi	r24, 0xE1	; 225
+ 444:	94 e0       	ldi	r25, 0x04	; 4
+ 446:	21 50       	subi	r18, 0x01	; 1
+ 448:	80 40       	sbci	r24, 0x00	; 0
+ 44a:	90 40       	sbci	r25, 0x00	; 0
+ 44c:	e1 f7       	brne	.-8      	; 0x446 <__EEPROM_REGION_LENGTH__+0x46>
+ 44e:	00 c0       	rjmp	.+0      	; 0x450 <__EEPROM_REGION_LENGTH__+0x50>
+ 450:	00 00       	nop
+ 452:	14 c0       	rjmp	.+40     	; 0x47c <__EEPROM_REGION_LENGTH__+0x7c>
+ 454:	0e 94 cd 02 	call	0x59a	; 0x59a <read_keypad>
+ 458:	88 23       	and	r24, r24
+ 45a:	81 f0       	breq	.+32     	; 0x47c <__EEPROM_REGION_LENGTH__+0x7c>
+ 45c:	ae 01       	movw	r20, r28
+ 45e:	4f 5f       	subi	r20, 0xFF	; 255
+ 460:	5f 4f       	sbci	r21, 0xFF	; 255
+ 462:	60 e0       	ldi	r22, 0x00	; 0
+ 464:	71 e0       	ldi	r23, 0x01	; 1
+ 466:	0e 94 7f 03 	call	0x6fe	; 0x6fe <comparar>
+ 46a:	2f ef       	ldi	r18, 0xFF	; 255
+ 46c:	83 ec       	ldi	r24, 0xC3	; 195
+ 46e:	99 e0       	ldi	r25, 0x09	; 9
+ 470:	21 50       	subi	r18, 0x01	; 1
+ 472:	80 40       	sbci	r24, 0x00	; 0
+ 474:	90 40       	sbci	r25, 0x00	; 0
+ 476:	e1 f7       	brne	.-8      	; 0x470 <__EEPROM_REGION_LENGTH__+0x70>
+ 478:	00 c0       	rjmp	.+0      	; 0x47a <__EEPROM_REGION_LENGTH__+0x7a>
+ 47a:	00 00       	nop
+ 47c:	29 81       	ldd	r18, Y+1	; 0x01
+ 47e:	3a 81       	ldd	r19, Y+2	; 0x02
+ 480:	80 91 22 01 	lds	r24, 0x0122	; 0x800122 <longitud_clave>
+ 484:	90 91 23 01 	lds	r25, 0x0123	; 0x800123 <longitud_clave+0x1>
+ 488:	28 17       	cp	r18, r24
+ 48a:	39 07       	cpc	r19, r25
+ 48c:	1c f3       	brlt	.-58     	; 0x454 <__EEPROM_REGION_LENGTH__+0x54>
+ 48e:	20 e0       	ldi	r18, 0x00	; 0
+ 490:	30 e0       	ldi	r19, 0x00	; 0
+ 492:	13 c0       	rjmp	.+38     	; 0x4ba <__EEPROM_REGION_LENGTH__+0xba>
+ 494:	f9 01       	movw	r30, r18
+ 496:	e0 50       	subi	r30, 0x00	; 0
+ 498:	ff 4f       	sbci	r31, 0xFF	; 255
+ 49a:	60 81       	ld	r22, Z
+ 49c:	70 e0       	ldi	r23, 0x00	; 0
+ 49e:	f9 01       	movw	r30, r18
+ 4a0:	ee 0f       	add	r30, r30
+ 4a2:	ff 1f       	adc	r31, r31
+ 4a4:	ea 5f       	subi	r30, 0xFA	; 250
+ 4a6:	fe 4f       	sbci	r31, 0xFE	; 254
+ 4a8:	40 81       	ld	r20, Z
+ 4aa:	51 81       	ldd	r21, Z+1	; 0x01
+ 4ac:	40 5d       	subi	r20, 0xD0	; 208
+ 4ae:	5f 4f       	sbci	r21, 0xFF	; 255
+ 4b0:	64 17       	cp	r22, r20
+ 4b2:	75 07       	cpc	r23, r21
+ 4b4:	41 f4       	brne	.+16     	; 0x4c6 <__EEPROM_REGION_LENGTH__+0xc6>
+ 4b6:	2f 5f       	subi	r18, 0xFF	; 255
+ 4b8:	3f 4f       	sbci	r19, 0xFF	; 255
+ 4ba:	28 17       	cp	r18, r24
+ 4bc:	39 07       	cpc	r19, r25
+ 4be:	54 f3       	brlt	.-44     	; 0x494 <__EEPROM_REGION_LENGTH__+0x94>
+ 4c0:	01 e0       	ldi	r16, 0x01	; 1
+ 4c2:	10 e0       	ldi	r17, 0x00	; 0
+ 4c4:	02 c0       	rjmp	.+4      	; 0x4ca <__EEPROM_REGION_LENGTH__+0xca>
+ 4c6:	00 e0       	ldi	r16, 0x00	; 0
+ 4c8:	10 e0       	ldi	r17, 0x00	; 0
+ 4ca:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 4ce:	01 30       	cpi	r16, 0x01	; 1
+ 4d0:	11 05       	cpc	r17, r1
+ 4d2:	f1 f4       	brne	.+60     	; 0x510 <__EEPROM_REGION_LENGTH__+0x110>
+ 4d4:	8b b1       	in	r24, 0x0b	; 11
+ 4d6:	80 68       	ori	r24, 0x80	; 128
+ 4d8:	8b b9       	out	0x0b, r24	; 11
+ 4da:	80 e8       	ldi	r24, 0x80	; 128
+ 4dc:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 4e0:	6a e5       	ldi	r22, 0x5A	; 90
+ 4e2:	71 e0       	ldi	r23, 0x01	; 1
+ 4e4:	80 e0       	ldi	r24, 0x00	; 0
+ 4e6:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 4ea:	2f ef       	ldi	r18, 0xFF	; 255
+ 4ec:	87 ea       	ldi	r24, 0xA7	; 167
+ 4ee:	91 e6       	ldi	r25, 0x61	; 97
+ 4f0:	21 50       	subi	r18, 0x01	; 1
+ 4f2:	80 40       	sbci	r24, 0x00	; 0
+ 4f4:	90 40       	sbci	r25, 0x00	; 0
+ 4f6:	e1 f7       	brne	.-8      	; 0x4f0 <__EEPROM_REGION_LENGTH__+0xf0>
+ 4f8:	00 c0       	rjmp	.+0      	; 0x4fa <__EEPROM_REGION_LENGTH__+0xfa>
+ 4fa:	00 00       	nop
+ 4fc:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <intentos+0x1>
+ 500:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <intentos>
+ 504:	0e 94 c7 00 	call	0x18e	; 0x18e <menuCambioClave>
+ 508:	8b b1       	in	r24, 0x0b	; 11
+ 50a:	8f 77       	andi	r24, 0x7F	; 127
+ 50c:	8b b9       	out	0x0b, r24	; 11
+ 50e:	20 c0       	rjmp	.+64     	; 0x550 <__EEPROM_REGION_LENGTH__+0x150>
+ 510:	8b b1       	in	r24, 0x0b	; 11
+ 512:	80 64       	ori	r24, 0x40	; 64
+ 514:	8b b9       	out	0x0b, r24	; 11
+ 516:	80 e8       	ldi	r24, 0x80	; 128
+ 518:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 51c:	6a e6       	ldi	r22, 0x6A	; 106
+ 51e:	71 e0       	ldi	r23, 0x01	; 1
+ 520:	80 e0       	ldi	r24, 0x00	; 0
+ 522:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 526:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <intentos>
+ 52a:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <intentos+0x1>
+ 52e:	01 96       	adiw	r24, 0x01	; 1
+ 530:	90 93 25 01 	sts	0x0125, r25	; 0x800125 <intentos+0x1>
+ 534:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <intentos>
+ 538:	2f ef       	ldi	r18, 0xFF	; 255
+ 53a:	87 ea       	ldi	r24, 0xA7	; 167
+ 53c:	91 e6       	ldi	r25, 0x61	; 97
+ 53e:	21 50       	subi	r18, 0x01	; 1
+ 540:	80 40       	sbci	r24, 0x00	; 0
+ 542:	90 40       	sbci	r25, 0x00	; 0
+ 544:	e1 f7       	brne	.-8      	; 0x53e <__EEPROM_REGION_LENGTH__+0x13e>
+ 546:	00 c0       	rjmp	.+0      	; 0x548 <__EEPROM_REGION_LENGTH__+0x148>
+ 548:	00 00       	nop
+ 54a:	8b b1       	in	r24, 0x0b	; 11
+ 54c:	8f 7b       	andi	r24, 0xBF	; 191
+ 54e:	8b b9       	out	0x0b, r24	; 11
+ 550:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <intentos>
+ 554:	90 91 25 01 	lds	r25, 0x0125	; 0x800125 <intentos+0x1>
+ 558:	03 97       	sbiw	r24, 0x03	; 3
+ 55a:	0c f4       	brge	.+2      	; 0x55e <__EEPROM_REGION_LENGTH__+0x15e>
+ 55c:	50 cf       	rjmp	.-352    	; 0x3fe <main+0x5e>
+ 55e:	8b b1       	in	r24, 0x0b	; 11
+ 560:	82 60       	ori	r24, 0x02	; 2
+ 562:	8b b9       	out	0x0b, r24	; 11
+ 564:	0e 94 9b 04 	call	0x936	; 0x936 <limpiarPantalla>
+ 568:	80 e8       	ldi	r24, 0x80	; 128
+ 56a:	0e 94 78 04 	call	0x8f0	; 0x8f0 <twi_lcd_cmd>
+ 56e:	6c e7       	ldi	r22, 0x7C	; 124
+ 570:	71 e0       	ldi	r23, 0x01	; 1
+ 572:	80 e0       	ldi	r24, 0x00	; 0
+ 574:	0e 94 07 04 	call	0x80e	; 0x80e <twi_lcd_msg>
+ 578:	2f ef       	ldi	r18, 0xFF	; 255
+ 57a:	83 e2       	ldi	r24, 0x23	; 35
+ 57c:	94 ef       	ldi	r25, 0xF4	; 244
+ 57e:	21 50       	subi	r18, 0x01	; 1
+ 580:	80 40       	sbci	r24, 0x00	; 0
+ 582:	90 40       	sbci	r25, 0x00	; 0
+ 584:	e1 f7       	brne	.-8      	; 0x57e <__EEPROM_REGION_LENGTH__+0x17e>
+ 586:	00 c0       	rjmp	.+0      	; 0x588 <__EEPROM_REGION_LENGTH__+0x188>
+ 588:	00 00       	nop
+ 58a:	8b b1       	in	r24, 0x0b	; 11
+ 58c:	8d 7f       	andi	r24, 0xFD	; 253
+ 58e:	8b b9       	out	0x0b, r24	; 11
+ 590:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <intentos+0x1>
+ 594:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <intentos>
+ 598:	32 cf       	rjmp	.-412    	; 0x3fe <main+0x5e>
+
+Disassembly of section .text.__dummy_fini:
+
+00000974 <_fini>:
+ 974:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+00000976 <__funcs_on_exit>:
+ 976:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+00000978 <__simulator_exit>:
+ 978:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+00000920 <exit>:
+ 920:	ec 01       	movw	r28, r24
+ 922:	0e 94 bb 04 	call	0x976	; 0x976 <__funcs_on_exit>
+ 926:	0e 94 ba 04 	call	0x974	; 0x974 <_fini>
+ 92a:	ce 01       	movw	r24, r28
+ 92c:	0e 94 bc 04 	call	0x978	; 0x978 <__simulator_exit>
+ 930:	ce 01       	movw	r24, r28
+ 932:	0e 94 b8 04 	call	0x970	; 0x970 <_Exit>
+
+Disassembly of section .text._Exit:
+
+00000970 <_Exit>:
+ 970:	0e 94 65 00 	call	0xca	; 0xca <_exit>

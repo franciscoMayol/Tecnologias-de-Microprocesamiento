@@ -1,0 +1,832 @@
+
+Codigo Porbelma B Monitoreo.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000007ba  2**0
+                  ALLOC, LOAD, DATA
+  1 .text         000000c2  00000000  00000000  000000b4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      0000002f  00000000  00000000  000007ba  2**0
+                  CONTENTS, READONLY
+  3 .stack.descriptors.hdr 0000000e  00000000  00000000  000007e9  2**0
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000088  00000000  00000000  000007f7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   0000146d  00000000  00000000  0000087f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000826  00000000  00000000  00001cec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000006a8  00000000  00000000  00002512  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  000001dc  00000000  00000000  00002bbc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000022e  00000000  00000000  00002d98  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000075f  00000000  00000000  00002fc6  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000090  00000000  00000000  00003725  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .text         00000004  000006f8  000006f8  000007ac  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 13 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000037b8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 14 .text.UART_init 00000016  000006a2  000006a2  00000756  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 15 .text.UART_sendChar 0000000e  000006ce  000006ce  00000782  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 16 .text.UART_sendString 0000002c  00000676  00000676  0000072a  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 17 .text.UART_recibirCaracter 0000000e  000006dc  000006dc  00000790  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 18 .progmemx.data 00000183  000000c2  000000c2  00000176  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, PROGMEMX
+ 19 .text.menu    0000004a  000005ee  000005ee  000006a2  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 20 .text.initSerial 0000000e  000006ea  000006ea  0000079e  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 21 .text.sendByteGPIO 00000064  000004de  000004de  00000592  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 22 .text.modoAutomatico 00000104  00000246  00000246  000002fa  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 23 .text.configurar_interrupciones 0000003e  00000638  00000638  000006ec  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 24 .text.main    00000100  0000034a  0000034a  000003fe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 25 .text.__vector_1 00000056  00000542  00000542  000005f6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 26 .text.__vector_2 00000056  00000598  00000598  0000064c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 27 .text.__vector_5 00000094  0000044a  0000044a  000004fe  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 28 .bss.salir    00000002  00800100  00800100  000007ba  2**0
+                  ALLOC
+ 29 .bss.opcion   00000001  00800102  00800102  000007ba  2**0
+                  ALLOC
+ 30 .text.__dummy_fini 00000002  00000700  00000700  000007b4  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 31 .text.__dummy_funcs_on_exit 00000002  00000702  00000702  000007b6  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 32 .text.__dummy_simulator_exit 00000002  00000704  00000704  000007b8  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 33 .text.exit    00000016  000006b8  000006b8  0000076c  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+ 34 .text._Exit   00000004  000006fc  000006fc  000007b0  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 37 00 	jmp	0x6e	; 0x6e <__ctors_end>
+   4:	0c 94 a1 02 	jmp	0x542	; 0x542 <__vector_1>
+   8:	0c 94 cc 02 	jmp	0x598	; 0x598 <__vector_2>
+   c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  10:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  14:	0c 94 25 02 	jmp	0x44a	; 0x44a <__vector_5>
+  18:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  1c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  20:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  24:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  28:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  2c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  30:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  34:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  38:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  3c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  40:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  44:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  48:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  4c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  50:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  54:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  58:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  5c:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  60:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+  64:	0c 94 7c 03 	jmp	0x6f8	; 0x6f8 <__bad_interrupt>
+
+00000068 <.dinit>:
+  68:	01 00       	.word	0x0001	; ????
+  6a:	01 03       	mulsu	r16, r17
+  6c:	80 00       	.word	0x0080	; ????
+
+0000006e <__ctors_end>:
+  6e:	11 24       	eor	r1, r1
+  70:	1f be       	out	0x3f, r1	; 63
+  72:	cf ef       	ldi	r28, 0xFF	; 255
+  74:	d8 e0       	ldi	r29, 0x08	; 8
+  76:	de bf       	out	0x3e, r29	; 62
+  78:	cd bf       	out	0x3d, r28	; 61
+
+0000007a <__do_copy_data>:
+  7a:	e8 e6       	ldi	r30, 0x68	; 104
+  7c:	f0 e0       	ldi	r31, 0x00	; 0
+  7e:	40 e0       	ldi	r20, 0x00	; 0
+  80:	17 c0       	rjmp	.+46     	; 0xb0 <__do_clear_bss+0x8>
+  82:	b5 91       	lpm	r27, Z+
+  84:	a5 91       	lpm	r26, Z+
+  86:	35 91       	lpm	r19, Z+
+  88:	25 91       	lpm	r18, Z+
+  8a:	05 91       	lpm	r16, Z+
+  8c:	07 fd       	sbrc	r16, 7
+  8e:	0c c0       	rjmp	.+24     	; 0xa8 <__do_clear_bss>
+  90:	95 91       	lpm	r25, Z+
+  92:	85 91       	lpm	r24, Z+
+  94:	ef 01       	movw	r28, r30
+  96:	f9 2f       	mov	r31, r25
+  98:	e8 2f       	mov	r30, r24
+  9a:	05 90       	lpm	r0, Z+
+  9c:	0d 92       	st	X+, r0
+  9e:	a2 17       	cp	r26, r18
+  a0:	b3 07       	cpc	r27, r19
+  a2:	d9 f7       	brne	.-10     	; 0x9a <__do_copy_data+0x20>
+  a4:	fe 01       	movw	r30, r28
+  a6:	04 c0       	rjmp	.+8      	; 0xb0 <__do_clear_bss+0x8>
+
+000000a8 <__do_clear_bss>:
+  a8:	1d 92       	st	X+, r1
+  aa:	a2 17       	cp	r26, r18
+  ac:	b3 07       	cpc	r27, r19
+  ae:	e1 f7       	brne	.-8      	; 0xa8 <__do_clear_bss>
+  b0:	ed 36       	cpi	r30, 0x6D	; 109
+  b2:	f4 07       	cpc	r31, r20
+  b4:	31 f7       	brne	.-52     	; 0x82 <__do_copy_data+0x8>
+  b6:	0e 94 a5 01 	call	0x34a	; 0x34a <main>
+  ba:	0c 94 5c 03 	jmp	0x6b8	; 0x6b8 <exit>
+
+000000be <_exit>:
+  be:	f8 94       	cli
+
+000000c0 <__stop_program>:
+  c0:	ff cf       	rjmp	.-2      	; 0xc0 <__stop_program>
+
+Disassembly of section .text:
+
+000006f8 <__bad_interrupt>:
+ 6f8:	0c 94 00 00 	jmp	0	; 0x0 <__TEXT_REGION_ORIGIN__>
+
+Disassembly of section .text.UART_init:
+
+000006a2 <UART_init>:
+	}
+	return respuesta;
+}
+
+void UART_init(unsigned int ubrr) {
+	UBRR0H = (unsigned char)(ubrr >> 8);
+ 6a2:	90 93 c5 00 	sts	0x00C5, r25	; 0x8000c5 <__TEXT_REGION_LENGTH__+0x7f80c5>
+	UBRR0L = (unsigned char)ubrr;
+ 6a6:	80 93 c4 00 	sts	0x00C4, r24	; 0x8000c4 <__TEXT_REGION_LENGTH__+0x7f80c4>
+	UCSR0B = (1 << RXEN0) | (1 << TXEN0);  // Habilitar recepción y transmisión
+ 6aa:	88 e1       	ldi	r24, 0x18	; 24
+ 6ac:	80 93 c1 00 	sts	0x00C1, r24	; 0x8000c1 <__TEXT_REGION_LENGTH__+0x7f80c1>
+	UCSR0C = (1 << UCSZ01) | (1 << UCSZ00);  // Configurar 8 bits de datos
+ 6b0:	86 e0       	ldi	r24, 0x06	; 6
+ 6b2:	80 93 c2 00 	sts	0x00C2, r24	; 0x8000c2 <__TEXT_REGION_LENGTH__+0x7f80c2>
+ 6b6:	08 95       	ret
+
+Disassembly of section .text.UART_sendChar:
+
+000006ce <UART_sendChar>:
+}
+
+// Enviar un carácter por UART
+void UART_sendChar(char data) {
+	while (!(UCSR0A & (1 << UDRE0)));  // Esperar a que el registro esté listo
+ 6ce:	90 91 c0 00 	lds	r25, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 6d2:	95 ff       	sbrs	r25, 5
+ 6d4:	fc cf       	rjmp	.-8      	; 0x6ce <UART_sendChar>
+	UDR0 = data;  // Enviar el dato
+ 6d6:	80 93 c6 00 	sts	0x00C6, r24	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+ 6da:	08 95       	ret
+
+Disassembly of section .text.UART_sendString:
+
+00000676 <UART_sendString>:
+}
+
+// Enviar una cadena de caracteres por UART
+void UART_sendString(const char *str) {
+ 676:	cf 92       	push	r12
+ 678:	df 92       	push	r13
+ 67a:	ef 92       	push	r14
+ 67c:	6b 01       	movw	r12, r22
+ 67e:	e8 2e       	mov	r14, r24
+	while (*str) {
+ 680:	06 c0       	rjmp	.+12     	; 0x68e <UART_sendString+0x18>
+		UART_sendChar(*str++);
+ 682:	9f ef       	ldi	r25, 0xFF	; 255
+ 684:	c9 1a       	sub	r12, r25
+ 686:	d9 0a       	sbc	r13, r25
+ 688:	e9 0a       	sbc	r14, r25
+ 68a:	0e 94 67 03 	call	0x6ce	; 0x6ce <UART_sendChar>
+	UDR0 = data;  // Enviar el dato
+}
+
+// Enviar una cadena de caracteres por UART
+void UART_sendString(const char *str) {
+	while (*str) {
+ 68e:	f6 01       	movw	r30, r12
+ 690:	84 91       	lpm	r24, Z
+ 692:	e7 fc       	sbrc	r14, 7
+ 694:	80 81       	ld	r24, Z
+ 696:	81 11       	cpse	r24, r1
+ 698:	f4 cf       	rjmp	.-24     	; 0x682 <UART_sendString+0xc>
+		UART_sendChar(*str++);
+	}
+}
+ 69a:	ef 90       	pop	r14
+ 69c:	df 90       	pop	r13
+ 69e:	cf 90       	pop	r12
+ 6a0:	08 95       	ret
+
+Disassembly of section .text.UART_recibirCaracter:
+
+000006dc <UART_recibirCaracter>:
+
+char UART_recibirCaracter(void) {
+	while (!(UCSR0A & (1 << RXC0)));  // Esperar hasta que haya un dato disponible en el buffer de recepción
+ 6dc:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 6e0:	88 23       	and	r24, r24
+ 6e2:	e4 f7       	brge	.-8      	; 0x6dc <UART_recibirCaracter>
+	return UDR0;  // Devolver el carácter recibido
+ 6e4:	80 91 c6 00 	lds	r24, 0x00C6	; 0x8000c6 <__TEXT_REGION_LENGTH__+0x7f80c6>
+}
+ 6e8:	08 95       	ret
+
+Disassembly of section .text.menu:
+
+000005ee <menu>:
+
+	// Esperar a que el pin RX sea alto (stop bit)
+	while (!(PINB & (1 << RX_PIN)));
+
+	return data; // Devolver el byte recibido
+}
+ 5ee:	62 ec       	ldi	r22, 0xC2	; 194
+ 5f0:	70 e0       	ldi	r23, 0x00	; 0
+ 5f2:	80 e0       	ldi	r24, 0x00	; 0
+ 5f4:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 5f8:	6a ee       	ldi	r22, 0xEA	; 234
+ 5fa:	70 e0       	ldi	r23, 0x00	; 0
+ 5fc:	80 e0       	ldi	r24, 0x00	; 0
+ 5fe:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 602:	62 e1       	ldi	r22, 0x12	; 18
+ 604:	71 e0       	ldi	r23, 0x01	; 1
+ 606:	80 e0       	ldi	r24, 0x00	; 0
+ 608:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 60c:	6c e3       	ldi	r22, 0x3C	; 60
+ 60e:	71 e0       	ldi	r23, 0x01	; 1
+ 610:	80 e0       	ldi	r24, 0x00	; 0
+ 612:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 616:	6a e4       	ldi	r22, 0x4A	; 74
+ 618:	71 e0       	ldi	r23, 0x01	; 1
+ 61a:	80 e0       	ldi	r24, 0x00	; 0
+ 61c:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 620:	61 e6       	ldi	r22, 0x61	; 97
+ 622:	71 e0       	ldi	r23, 0x01	; 1
+ 624:	80 e0       	ldi	r24, 0x00	; 0
+ 626:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 62a:	0e 94 6e 03 	call	0x6dc	; 0x6dc <UART_recibirCaracter>
+ 62e:	9f ec       	ldi	r25, 0xCF	; 207
+ 630:	98 0f       	add	r25, r24
+ 632:	92 30       	cpi	r25, 0x02	; 2
+ 634:	d0 f7       	brcc	.-12     	; 0x62a <menu+0x3c>
+ 636:	08 95       	ret
+
+Disassembly of section .text.initSerial:
+
+000006ea <initSerial>:
+}
+
+
+void initSerial() {
+	// Configura PB0 como salida (TX)
+	DDRB |= (1 << TX_PIN);
+ 6ea:	84 b1       	in	r24, 0x04	; 4
+ 6ec:	81 60       	ori	r24, 0x01	; 1
+ 6ee:	84 b9       	out	0x04, r24	; 4
+	// Configura PB1 como entrada (RX)
+	DDRB &= ~(1 << RX_PIN);
+ 6f0:	84 b1       	in	r24, 0x04	; 4
+ 6f2:	8d 7f       	andi	r24, 0xFD	; 253
+ 6f4:	84 b9       	out	0x04, r24	; 4
+ 6f6:	08 95       	ret
+
+Disassembly of section .text.sendByteGPIO:
+
+000004de <sendByteGPIO>:
+
+	// Esperar a que el pin RX sea alto (stop bit)
+	while (!(PINB & (1 << RX_PIN)));
+
+	return data; // Devolver el byte recibido
+}
+ 4de:	95 b1       	in	r25, 0x05	; 5
+ 4e0:	9e 7f       	andi	r25, 0xFE	; 254
+ 4e2:	95 b9       	out	0x05, r25	; 5
+ 4e4:	e3 ea       	ldi	r30, 0xA3	; 163
+ 4e6:	f1 e0       	ldi	r31, 0x01	; 1
+ 4e8:	31 97       	sbiw	r30, 0x01	; 1
+ 4ea:	f1 f7       	brne	.-4      	; 0x4e8 <sendByteGPIO+0xa>
+ 4ec:	00 c0       	rjmp	.+0      	; 0x4ee <sendByteGPIO+0x10>
+ 4ee:	00 00       	nop
+ 4f0:	20 e0       	ldi	r18, 0x00	; 0
+ 4f2:	30 e0       	ldi	r19, 0x00	; 0
+ 4f4:	19 c0       	rjmp	.+50     	; 0x528 <sendByteGPIO+0x4a>
+ 4f6:	48 2f       	mov	r20, r24
+ 4f8:	50 e0       	ldi	r21, 0x00	; 0
+ 4fa:	02 2e       	mov	r0, r18
+ 4fc:	02 c0       	rjmp	.+4      	; 0x502 <sendByteGPIO+0x24>
+ 4fe:	55 95       	asr	r21
+ 500:	47 95       	ror	r20
+ 502:	0a 94       	dec	r0
+ 504:	e2 f7       	brpl	.-8      	; 0x4fe <sendByteGPIO+0x20>
+ 506:	40 ff       	sbrs	r20, 0
+ 508:	04 c0       	rjmp	.+8      	; 0x512 <sendByteGPIO+0x34>
+ 50a:	95 b1       	in	r25, 0x05	; 5
+ 50c:	91 60       	ori	r25, 0x01	; 1
+ 50e:	95 b9       	out	0x05, r25	; 5
+ 510:	03 c0       	rjmp	.+6      	; 0x518 <sendByteGPIO+0x3a>
+ 512:	95 b1       	in	r25, 0x05	; 5
+ 514:	9e 7f       	andi	r25, 0xFE	; 254
+ 516:	95 b9       	out	0x05, r25	; 5
+ 518:	e3 ea       	ldi	r30, 0xA3	; 163
+ 51a:	f1 e0       	ldi	r31, 0x01	; 1
+ 51c:	31 97       	sbiw	r30, 0x01	; 1
+ 51e:	f1 f7       	brne	.-4      	; 0x51c <sendByteGPIO+0x3e>
+ 520:	00 c0       	rjmp	.+0      	; 0x522 <sendByteGPIO+0x44>
+ 522:	00 00       	nop
+ 524:	2f 5f       	subi	r18, 0xFF	; 255
+ 526:	3f 4f       	sbci	r19, 0xFF	; 255
+ 528:	28 30       	cpi	r18, 0x08	; 8
+ 52a:	31 05       	cpc	r19, r1
+ 52c:	24 f3       	brlt	.-56     	; 0x4f6 <sendByteGPIO+0x18>
+ 52e:	85 b1       	in	r24, 0x05	; 5
+ 530:	81 60       	ori	r24, 0x01	; 1
+ 532:	85 b9       	out	0x05, r24	; 5
+ 534:	83 ea       	ldi	r24, 0xA3	; 163
+ 536:	91 e0       	ldi	r25, 0x01	; 1
+ 538:	01 97       	sbiw	r24, 0x01	; 1
+ 53a:	f1 f7       	brne	.-4      	; 0x538 <sendByteGPIO+0x5a>
+ 53c:	00 c0       	rjmp	.+0      	; 0x53e <sendByteGPIO+0x60>
+ 53e:	00 00       	nop
+ 540:	08 95       	ret
+
+Disassembly of section .text.modoAutomatico:
+
+00000246 <modoAutomatico>:
+ 246:	80 91 c0 00 	lds	r24, 0x00C0	; 0x8000c0 <__TEXT_REGION_LENGTH__+0x7f80c0>
+ 24a:	88 23       	and	r24, r24
+ 24c:	0c f0       	brlt	.+2      	; 0x250 <modoAutomatico+0xa>
+ 24e:	7c c0       	rjmp	.+248    	; 0x348 <modoAutomatico+0x102>
+ 250:	83 e5       	ldi	r24, 0x53	; 83
+ 252:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 256:	83 e5       	ldi	r24, 0x53	; 83
+ 258:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 25c:	83 e5       	ldi	r24, 0x53	; 83
+ 25e:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 262:	64 e7       	ldi	r22, 0x74	; 116
+ 264:	71 e0       	ldi	r23, 0x01	; 1
+ 266:	80 e0       	ldi	r24, 0x00	; 0
+ 268:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 26c:	2f ef       	ldi	r18, 0xFF	; 255
+ 26e:	83 ed       	ldi	r24, 0xD3	; 211
+ 270:	90 e3       	ldi	r25, 0x30	; 48
+ 272:	21 50       	subi	r18, 0x01	; 1
+ 274:	80 40       	sbci	r24, 0x00	; 0
+ 276:	90 40       	sbci	r25, 0x00	; 0
+ 278:	e1 f7       	brne	.-8      	; 0x272 <modoAutomatico+0x2c>
+ 27a:	00 c0       	rjmp	.+0      	; 0x27c <modoAutomatico+0x36>
+ 27c:	00 00       	nop
+ 27e:	88 e4       	ldi	r24, 0x48	; 72
+ 280:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 284:	88 e4       	ldi	r24, 0x48	; 72
+ 286:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 28a:	88 e4       	ldi	r24, 0x48	; 72
+ 28c:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 290:	6b e8       	ldi	r22, 0x8B	; 139
+ 292:	71 e0       	ldi	r23, 0x01	; 1
+ 294:	80 e0       	ldi	r24, 0x00	; 0
+ 296:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 29a:	2f ef       	ldi	r18, 0xFF	; 255
+ 29c:	83 e2       	ldi	r24, 0x23	; 35
+ 29e:	94 ef       	ldi	r25, 0xF4	; 244
+ 2a0:	21 50       	subi	r18, 0x01	; 1
+ 2a2:	80 40       	sbci	r24, 0x00	; 0
+ 2a4:	90 40       	sbci	r25, 0x00	; 0
+ 2a6:	e1 f7       	brne	.-8      	; 0x2a0 <modoAutomatico+0x5a>
+ 2a8:	00 c0       	rjmp	.+0      	; 0x2aa <modoAutomatico+0x64>
+ 2aa:	00 00       	nop
+ 2ac:	83 e5       	ldi	r24, 0x53	; 83
+ 2ae:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2b2:	83 e5       	ldi	r24, 0x53	; 83
+ 2b4:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2b8:	83 e5       	ldi	r24, 0x53	; 83
+ 2ba:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2be:	64 e7       	ldi	r22, 0x74	; 116
+ 2c0:	71 e0       	ldi	r23, 0x01	; 1
+ 2c2:	80 e0       	ldi	r24, 0x00	; 0
+ 2c4:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 2c8:	2f ef       	ldi	r18, 0xFF	; 255
+ 2ca:	83 e2       	ldi	r24, 0x23	; 35
+ 2cc:	94 ef       	ldi	r25, 0xF4	; 244
+ 2ce:	21 50       	subi	r18, 0x01	; 1
+ 2d0:	80 40       	sbci	r24, 0x00	; 0
+ 2d2:	90 40       	sbci	r25, 0x00	; 0
+ 2d4:	e1 f7       	brne	.-8      	; 0x2ce <modoAutomatico+0x88>
+ 2d6:	00 c0       	rjmp	.+0      	; 0x2d8 <modoAutomatico+0x92>
+ 2d8:	00 00       	nop
+ 2da:	81 e4       	ldi	r24, 0x41	; 65
+ 2dc:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2e0:	81 e4       	ldi	r24, 0x41	; 65
+ 2e2:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2e6:	81 e4       	ldi	r24, 0x41	; 65
+ 2e8:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 2ec:	62 eb       	ldi	r22, 0xB2	; 178
+ 2ee:	71 e0       	ldi	r23, 0x01	; 1
+ 2f0:	80 e0       	ldi	r24, 0x00	; 0
+ 2f2:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 2f6:	2f ef       	ldi	r18, 0xFF	; 255
+ 2f8:	83 e2       	ldi	r24, 0x23	; 35
+ 2fa:	94 ef       	ldi	r25, 0xF4	; 244
+ 2fc:	21 50       	subi	r18, 0x01	; 1
+ 2fe:	80 40       	sbci	r24, 0x00	; 0
+ 300:	90 40       	sbci	r25, 0x00	; 0
+ 302:	e1 f7       	brne	.-8      	; 0x2fc <modoAutomatico+0xb6>
+ 304:	00 c0       	rjmp	.+0      	; 0x306 <modoAutomatico+0xc0>
+ 306:	00 00       	nop
+ 308:	83 e5       	ldi	r24, 0x53	; 83
+ 30a:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 30e:	83 e5       	ldi	r24, 0x53	; 83
+ 310:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 314:	83 e5       	ldi	r24, 0x53	; 83
+ 316:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 31a:	64 e7       	ldi	r22, 0x74	; 116
+ 31c:	71 e0       	ldi	r23, 0x01	; 1
+ 31e:	80 e0       	ldi	r24, 0x00	; 0
+ 320:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 324:	2f ef       	ldi	r18, 0xFF	; 255
+ 326:	83 e2       	ldi	r24, 0x23	; 35
+ 328:	94 ef       	ldi	r25, 0xF4	; 244
+ 32a:	21 50       	subi	r18, 0x01	; 1
+ 32c:	80 40       	sbci	r24, 0x00	; 0
+ 32e:	90 40       	sbci	r25, 0x00	; 0
+ 330:	e1 f7       	brne	.-8      	; 0x32a <modoAutomatico+0xe4>
+ 332:	00 c0       	rjmp	.+0      	; 0x334 <modoAutomatico+0xee>
+ 334:	00 00       	nop
+ 336:	88 e5       	ldi	r24, 0x58	; 88
+ 338:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 33c:	88 e5       	ldi	r24, 0x58	; 88
+ 33e:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 342:	88 e5       	ldi	r24, 0x58	; 88
+ 344:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 348:	08 95       	ret
+
+Disassembly of section .text.configurar_interrupciones:
+
+00000638 <configurar_interrupciones>:
+
+void configurar_interrupciones() {
+	// Configuración de INT0 (PD2)
+	EICRA |= (1 << ISC01);  
+ 638:	e9 e6       	ldi	r30, 0x69	; 105
+ 63a:	f0 e0       	ldi	r31, 0x00	; 0
+ 63c:	80 81       	ld	r24, Z
+ 63e:	82 60       	ori	r24, 0x02	; 2
+ 640:	80 83       	st	Z, r24
+	EIMSK |= (1 << INT0);   
+ 642:	8d b3       	in	r24, 0x1d	; 29
+ 644:	81 60       	ori	r24, 0x01	; 1
+ 646:	8d bb       	out	0x1d, r24	; 29
+
+	// Configuración de INT1 (PD3)
+	EICRA |= (1 << ISC11);  
+ 648:	80 81       	ld	r24, Z
+ 64a:	88 60       	ori	r24, 0x08	; 8
+ 64c:	80 83       	st	Z, r24
+	EIMSK |= (1 << INT1);   
+ 64e:	8d b3       	in	r24, 0x1d	; 29
+ 650:	82 60       	ori	r24, 0x02	; 2
+ 652:	8d bb       	out	0x1d, r24	; 29
+
+	// Configuración de PCINT20 (PD4)
+	PCICR |= (1 << PCIE2);  
+ 654:	a8 e6       	ldi	r26, 0x68	; 104
+ 656:	b0 e0       	ldi	r27, 0x00	; 0
+ 658:	8c 91       	ld	r24, X
+ 65a:	84 60       	ori	r24, 0x04	; 4
+ 65c:	8c 93       	st	X, r24
+	PCMSK2 |= (1 << PCINT20);
+ 65e:	ed e6       	ldi	r30, 0x6D	; 109
+ 660:	f0 e0       	ldi	r31, 0x00	; 0
+ 662:	80 81       	ld	r24, Z
+ 664:	80 61       	ori	r24, 0x10	; 16
+ 666:	80 83       	st	Z, r24
+
+	// Configuración de PCINT21 (PD5)
+	PCICR |= (1 << PCIE2); 
+ 668:	8c 91       	ld	r24, X
+ 66a:	84 60       	ori	r24, 0x04	; 4
+ 66c:	8c 93       	st	X, r24
+	PCMSK2 |= (1 << PCINT21); 
+ 66e:	80 81       	ld	r24, Z
+ 670:	80 62       	ori	r24, 0x20	; 32
+ 672:	80 83       	st	Z, r24
+ 674:	08 95       	ret
+
+Disassembly of section .text.main:
+
+0000034a <main>:
+
+	// Esperar a que el pin RX sea alto (stop bit)
+	while (!(PINB & (1 << RX_PIN)));
+
+	return data; // Devolver el byte recibido
+}
+ 34a:	0e 94 75 03 	call	0x6ea	; 0x6ea <initSerial>
+ 34e:	87 e6       	ldi	r24, 0x67	; 103
+ 350:	90 e0       	ldi	r25, 0x00	; 0
+ 352:	0e 94 51 03 	call	0x6a2	; 0x6a2 <UART_init>
+ 356:	0e 94 1c 03 	call	0x638	; 0x638 <configurar_interrupciones>
+ 35a:	8a b1       	in	r24, 0x0a	; 10
+ 35c:	83 7c       	andi	r24, 0xC3	; 195
+ 35e:	8a b9       	out	0x0a, r24	; 10
+ 360:	8b b1       	in	r24, 0x0b	; 11
+ 362:	8c 63       	ori	r24, 0x3C	; 60
+ 364:	8b b9       	out	0x0b, r24	; 11
+ 366:	0e 94 f7 02 	call	0x5ee	; 0x5ee <menu>
+ 36a:	80 93 02 01 	sts	0x0102, r24	; 0x800102 <opcion>
+ 36e:	81 33       	cpi	r24, 0x31	; 49
+ 370:	99 f5       	brne	.+102    	; 0x3d8 <main+0x8e>
+ 372:	f8 94       	cli
+ 374:	2f ef       	ldi	r18, 0xFF	; 255
+ 376:	81 ee       	ldi	r24, 0xE1	; 225
+ 378:	94 e0       	ldi	r25, 0x04	; 4
+ 37a:	21 50       	subi	r18, 0x01	; 1
+ 37c:	80 40       	sbci	r24, 0x00	; 0
+ 37e:	90 40       	sbci	r25, 0x00	; 0
+ 380:	e1 f7       	brne	.-8      	; 0x37a <main+0x30>
+ 382:	00 c0       	rjmp	.+0      	; 0x384 <main+0x3a>
+ 384:	00 00       	nop
+ 386:	8a e4       	ldi	r24, 0x4A	; 74
+ 388:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 38c:	8a e4       	ldi	r24, 0x4A	; 74
+ 38e:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 392:	8a e4       	ldi	r24, 0x4A	; 74
+ 394:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 398:	8a e4       	ldi	r24, 0x4A	; 74
+ 39a:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 39e:	8a e4       	ldi	r24, 0x4A	; 74
+ 3a0:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 3a4:	8a e4       	ldi	r24, 0x4A	; 74
+ 3a6:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 3aa:	8a e4       	ldi	r24, 0x4A	; 74
+ 3ac:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 3b0:	8a e4       	ldi	r24, 0x4A	; 74
+ 3b2:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 3b6:	6d ed       	ldi	r22, 0xDD	; 221
+ 3b8:	71 e0       	ldi	r23, 0x01	; 1
+ 3ba:	80 e0       	ldi	r24, 0x00	; 0
+ 3bc:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 3c0:	2f ef       	ldi	r18, 0xFF	; 255
+ 3c2:	83 ed       	ldi	r24, 0xD3	; 211
+ 3c4:	90 e3       	ldi	r25, 0x30	; 48
+ 3c6:	21 50       	subi	r18, 0x01	; 1
+ 3c8:	80 40       	sbci	r24, 0x00	; 0
+ 3ca:	90 40       	sbci	r25, 0x00	; 0
+ 3cc:	e1 f7       	brne	.-8      	; 0x3c6 <main+0x7c>
+ 3ce:	00 c0       	rjmp	.+0      	; 0x3d0 <main+0x86>
+ 3d0:	00 00       	nop
+ 3d2:	0e 94 23 01 	call	0x246	; 0x246 <modoAutomatico>
+ 3d6:	c7 cf       	rjmp	.-114    	; 0x366 <main+0x1c>
+ 3d8:	82 33       	cpi	r24, 0x32	; 50
+ 3da:	29 f6       	brne	.-118    	; 0x366 <main+0x1c>
+ 3dc:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 3e0:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 3e4:	2f ef       	ldi	r18, 0xFF	; 255
+ 3e6:	81 ee       	ldi	r24, 0xE1	; 225
+ 3e8:	94 e0       	ldi	r25, 0x04	; 4
+ 3ea:	21 50       	subi	r18, 0x01	; 1
+ 3ec:	80 40       	sbci	r24, 0x00	; 0
+ 3ee:	90 40       	sbci	r25, 0x00	; 0
+ 3f0:	e1 f7       	brne	.-8      	; 0x3ea <main+0xa0>
+ 3f2:	00 c0       	rjmp	.+0      	; 0x3f4 <main+0xaa>
+ 3f4:	00 00       	nop
+ 3f6:	8d e4       	ldi	r24, 0x4D	; 77
+ 3f8:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 3fc:	8d e4       	ldi	r24, 0x4D	; 77
+ 3fe:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 402:	8d e4       	ldi	r24, 0x4D	; 77
+ 404:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 408:	8d e4       	ldi	r24, 0x4D	; 77
+ 40a:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 40e:	8d e4       	ldi	r24, 0x4D	; 77
+ 410:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 414:	8d e4       	ldi	r24, 0x4D	; 77
+ 416:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 41a:	8d e4       	ldi	r24, 0x4D	; 77
+ 41c:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 420:	8d e4       	ldi	r24, 0x4D	; 77
+ 422:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 426:	78 94       	sei
+ 428:	63 e1       	ldi	r22, 0x13	; 19
+ 42a:	72 e0       	ldi	r23, 0x02	; 2
+ 42c:	80 e0       	ldi	r24, 0x00	; 0
+ 42e:	0e 94 3b 03 	call	0x676	; 0x676 <UART_sendString>
+ 432:	80 91 00 01 	lds	r24, 0x0100	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 436:	90 91 01 01 	lds	r25, 0x0101	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 43a:	01 97       	sbiw	r24, 0x01	; 1
+ 43c:	d1 f7       	brne	.-12     	; 0x432 <__EEPROM_REGION_LENGTH__+0x32>
+ 43e:	10 92 01 01 	sts	0x0101, r1	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 442:	10 92 00 01 	sts	0x0100, r1	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 446:	f8 94       	cli
+ 448:	8e cf       	rjmp	.-228    	; 0x366 <main+0x1c>
+
+Disassembly of section .text.__vector_1:
+
+00000542 <__vector_1>:
+ 542:	1f 92       	push	r1
+ 544:	0f 92       	push	r0
+ 546:	0f b6       	in	r0, 0x3f	; 63
+ 548:	0f 92       	push	r0
+ 54a:	11 24       	eor	r1, r1
+ 54c:	2f 93       	push	r18
+ 54e:	3f 93       	push	r19
+ 550:	4f 93       	push	r20
+ 552:	5f 93       	push	r21
+ 554:	6f 93       	push	r22
+ 556:	7f 93       	push	r23
+ 558:	8f 93       	push	r24
+ 55a:	9f 93       	push	r25
+ 55c:	af 93       	push	r26
+ 55e:	bf 93       	push	r27
+ 560:	ef 93       	push	r30
+ 562:	ff 93       	push	r31
+ 564:	81 e4       	ldi	r24, 0x41	; 65
+ 566:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 56a:	81 e4       	ldi	r24, 0x41	; 65
+ 56c:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 570:	81 e4       	ldi	r24, 0x41	; 65
+ 572:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 576:	ff 91       	pop	r31
+ 578:	ef 91       	pop	r30
+ 57a:	bf 91       	pop	r27
+ 57c:	af 91       	pop	r26
+ 57e:	9f 91       	pop	r25
+ 580:	8f 91       	pop	r24
+ 582:	7f 91       	pop	r23
+ 584:	6f 91       	pop	r22
+ 586:	5f 91       	pop	r21
+ 588:	4f 91       	pop	r20
+ 58a:	3f 91       	pop	r19
+ 58c:	2f 91       	pop	r18
+ 58e:	0f 90       	pop	r0
+ 590:	0f be       	out	0x3f, r0	; 63
+ 592:	0f 90       	pop	r0
+ 594:	1f 90       	pop	r1
+ 596:	18 95       	reti
+
+Disassembly of section .text.__vector_2:
+
+00000598 <__vector_2>:
+ 598:	1f 92       	push	r1
+ 59a:	0f 92       	push	r0
+ 59c:	0f b6       	in	r0, 0x3f	; 63
+ 59e:	0f 92       	push	r0
+ 5a0:	11 24       	eor	r1, r1
+ 5a2:	2f 93       	push	r18
+ 5a4:	3f 93       	push	r19
+ 5a6:	4f 93       	push	r20
+ 5a8:	5f 93       	push	r21
+ 5aa:	6f 93       	push	r22
+ 5ac:	7f 93       	push	r23
+ 5ae:	8f 93       	push	r24
+ 5b0:	9f 93       	push	r25
+ 5b2:	af 93       	push	r26
+ 5b4:	bf 93       	push	r27
+ 5b6:	ef 93       	push	r30
+ 5b8:	ff 93       	push	r31
+ 5ba:	88 e4       	ldi	r24, 0x48	; 72
+ 5bc:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 5c0:	88 e4       	ldi	r24, 0x48	; 72
+ 5c2:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 5c6:	88 e4       	ldi	r24, 0x48	; 72
+ 5c8:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 5cc:	ff 91       	pop	r31
+ 5ce:	ef 91       	pop	r30
+ 5d0:	bf 91       	pop	r27
+ 5d2:	af 91       	pop	r26
+ 5d4:	9f 91       	pop	r25
+ 5d6:	8f 91       	pop	r24
+ 5d8:	7f 91       	pop	r23
+ 5da:	6f 91       	pop	r22
+ 5dc:	5f 91       	pop	r21
+ 5de:	4f 91       	pop	r20
+ 5e0:	3f 91       	pop	r19
+ 5e2:	2f 91       	pop	r18
+ 5e4:	0f 90       	pop	r0
+ 5e6:	0f be       	out	0x3f, r0	; 63
+ 5e8:	0f 90       	pop	r0
+ 5ea:	1f 90       	pop	r1
+ 5ec:	18 95       	reti
+
+Disassembly of section .text.__vector_5:
+
+0000044a <__vector_5>:
+ 44a:	1f 92       	push	r1
+ 44c:	0f 92       	push	r0
+ 44e:	0f b6       	in	r0, 0x3f	; 63
+ 450:	0f 92       	push	r0
+ 452:	11 24       	eor	r1, r1
+ 454:	2f 93       	push	r18
+ 456:	3f 93       	push	r19
+ 458:	4f 93       	push	r20
+ 45a:	5f 93       	push	r21
+ 45c:	6f 93       	push	r22
+ 45e:	7f 93       	push	r23
+ 460:	8f 93       	push	r24
+ 462:	9f 93       	push	r25
+ 464:	af 93       	push	r26
+ 466:	bf 93       	push	r27
+ 468:	ef 93       	push	r30
+ 46a:	ff 93       	push	r31
+ 46c:	4c 99       	sbic	0x09, 4	; 9
+ 46e:	14 c0       	rjmp	.+40     	; 0x498 <__vector_5+0x4e>
+ 470:	83 e5       	ldi	r24, 0x53	; 83
+ 472:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 476:	83 e5       	ldi	r24, 0x53	; 83
+ 478:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 47c:	83 e5       	ldi	r24, 0x53	; 83
+ 47e:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 482:	f8 94       	cli
+ 484:	2f ef       	ldi	r18, 0xFF	; 255
+ 486:	8b e7       	ldi	r24, 0x7B	; 123
+ 488:	92 e9       	ldi	r25, 0x92	; 146
+ 48a:	21 50       	subi	r18, 0x01	; 1
+ 48c:	80 40       	sbci	r24, 0x00	; 0
+ 48e:	90 40       	sbci	r25, 0x00	; 0
+ 490:	e1 f7       	brne	.-8      	; 0x48a <__vector_5+0x40>
+ 492:	00 c0       	rjmp	.+0      	; 0x494 <__vector_5+0x4a>
+ 494:	00 00       	nop
+ 496:	78 94       	sei
+ 498:	4d 99       	sbic	0x09, 5	; 9
+ 49a:	10 c0       	rjmp	.+32     	; 0x4bc <__vector_5+0x72>
+ 49c:	88 e5       	ldi	r24, 0x58	; 88
+ 49e:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 4a2:	88 e5       	ldi	r24, 0x58	; 88
+ 4a4:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 4a8:	88 e5       	ldi	r24, 0x58	; 88
+ 4aa:	0e 94 6f 02 	call	0x4de	; 0x4de <sendByteGPIO>
+ 4ae:	f8 94       	cli
+ 4b0:	81 e0       	ldi	r24, 0x01	; 1
+ 4b2:	90 e0       	ldi	r25, 0x00	; 0
+ 4b4:	90 93 01 01 	sts	0x0101, r25	; 0x800101 <__DATA_REGION_ORIGIN__+0x1>
+ 4b8:	80 93 00 01 	sts	0x0100, r24	; 0x800100 <__DATA_REGION_ORIGIN__>
+ 4bc:	ff 91       	pop	r31
+ 4be:	ef 91       	pop	r30
+ 4c0:	bf 91       	pop	r27
+ 4c2:	af 91       	pop	r26
+ 4c4:	9f 91       	pop	r25
+ 4c6:	8f 91       	pop	r24
+ 4c8:	7f 91       	pop	r23
+ 4ca:	6f 91       	pop	r22
+ 4cc:	5f 91       	pop	r21
+ 4ce:	4f 91       	pop	r20
+ 4d0:	3f 91       	pop	r19
+ 4d2:	2f 91       	pop	r18
+ 4d4:	0f 90       	pop	r0
+ 4d6:	0f be       	out	0x3f, r0	; 63
+ 4d8:	0f 90       	pop	r0
+ 4da:	1f 90       	pop	r1
+ 4dc:	18 95       	reti
+
+Disassembly of section .text.__dummy_fini:
+
+00000700 <_fini>:
+ 700:	08 95       	ret
+
+Disassembly of section .text.__dummy_funcs_on_exit:
+
+00000702 <__funcs_on_exit>:
+ 702:	08 95       	ret
+
+Disassembly of section .text.__dummy_simulator_exit:
+
+00000704 <__simulator_exit>:
+ 704:	08 95       	ret
+
+Disassembly of section .text.exit:
+
+000006b8 <exit>:
+ 6b8:	ec 01       	movw	r28, r24
+ 6ba:	0e 94 81 03 	call	0x702	; 0x702 <__funcs_on_exit>
+ 6be:	0e 94 80 03 	call	0x700	; 0x700 <_fini>
+ 6c2:	ce 01       	movw	r24, r28
+ 6c4:	0e 94 82 03 	call	0x704	; 0x704 <__simulator_exit>
+ 6c8:	ce 01       	movw	r24, r28
+ 6ca:	0e 94 7e 03 	call	0x6fc	; 0x6fc <_Exit>
+
+Disassembly of section .text._Exit:
+
+000006fc <_Exit>:
+ 6fc:	0e 94 5f 00 	call	0xbe	; 0xbe <_exit>
